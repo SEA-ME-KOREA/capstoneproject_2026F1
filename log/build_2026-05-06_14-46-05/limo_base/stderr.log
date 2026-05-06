@@ -1,0 +1,14 @@
+/home/jihyun/LIMO_simulation/src/limo_base/src/limo_driver.cpp: In member function ‘void AgileX::LimoDriver::parseFrame(const AgileX::LimoFrame&)’:
+/home/jihyun/LIMO_simulation/src/limo_base/src/limo_driver.cpp:298:21: warning: unused variable ‘left_wheel_odom’ [-Wunused-variable]
+  298 |             int32_t left_wheel_odom = (frame.data[3] & 0xff) | (frame.data[2] << 8) |
+      |                     ^~~~~~~~~~~~~~~
+/home/jihyun/LIMO_simulation/src/limo_base/src/limo_driver.cpp:300:21: warning: unused variable ‘right_wheel_odom’ [-Wunused-variable]
+  300 |             int32_t right_wheel_odom = (frame.data[7] & 0xff) | (frame.data[6] << 8) |
+      |                     ^~~~~~~~~~~~~~~~
+/home/jihyun/LIMO_simulation/src/limo_base/src/limo_driver.cpp: In member function ‘void AgileX::LimoDriver::publishIMUData(double)’:
+/home/jihyun/LIMO_simulation/src/limo_base/src/limo_driver.cpp:489:16: warning: unused variable ‘present_theta_’ [-Wunused-variable]
+  489 |         double present_theta_ =imu_data_.yaw;
+      |                ^~~~~~~~~~~~~~
+/home/jihyun/LIMO_simulation/src/limo_base/src/limo_driver.cpp:490:16: warning: unused variable ‘last_theta_’ [-Wunused-variable]
+  490 |         double last_theta_ = imu_data_.yaw;
+      |                ^~~~~~~~~~~

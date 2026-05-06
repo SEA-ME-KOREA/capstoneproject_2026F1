@@ -1,0 +1,6 @@
+{
+  "package_name": "limo_msgs",
+  "non_idl_tuples": [
+    "/home/jihyun/LIMO_simulation/src/limo_msgs:msg/LimoStatus.msg"
+  ]
+}

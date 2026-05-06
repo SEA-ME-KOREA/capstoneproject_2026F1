@@ -1,0 +1,61 @@
+[0.016s] Invoking command in '/home/jihyun/LIMO_simulation/build/limo_car': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jihyun/LIMO_simulation/install/my_valet_parking:/opt/ros/humble /usr/bin/cmake /home/jihyun/LIMO_simulation/src/limo_car -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jihyun/LIMO_simulation/install/limo_car
+[0.192s] -- The C compiler identification is GNU 11.4.0
+[0.192s] -- The CXX compiler identification is GNU 11.4.0
+[0.192s] -- Detecting C compiler ABI info
+[0.192s] -- Detecting C compiler ABI info - done
+[0.195s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.195s] -- Detecting C compile features
+[0.195s] -- Detecting C compile features - done
+[0.198s] -- Detecting CXX compiler ABI info
+[0.254s] -- Detecting CXX compiler ABI info - done
+[0.262s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.262s] -- Detecting CXX compile features
+[0.262s] -- Detecting CXX compile features - done
+[0.266s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.371s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.415s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.447s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.528s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.529s] -- Added test 'lint_cmake' to check CMake code style
+[0.530s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.531s] -- Added test 'xmllint' to check XML markup files
+[0.532s] -- Configuring done
+[0.534s] -- Generating done
+[0.534s] -- Build files have been written to: /home/jihyun/LIMO_simulation/build/limo_car
+[0.538s] Invoked command in '/home/jihyun/LIMO_simulation/build/limo_car' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jihyun/LIMO_simulation/install/my_valet_parking:/opt/ros/humble /usr/bin/cmake /home/jihyun/LIMO_simulation/src/limo_car -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jihyun/LIMO_simulation/install/limo_car
+[0.540s] Invoking command in '/home/jihyun/LIMO_simulation/build/limo_car': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jihyun/LIMO_simulation/install/my_valet_parking:/opt/ros/humble /usr/bin/cmake --build /home/jihyun/LIMO_simulation/build/limo_car -- -j22 -l22
+[0.581s] Invoked command in '/home/jihyun/LIMO_simulation/build/limo_car' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jihyun/LIMO_simulation/install/my_valet_parking:/opt/ros/humble /usr/bin/cmake --build /home/jihyun/LIMO_simulation/build/limo_car -- -j22 -l22
+[0.582s] Invoking command in '/home/jihyun/LIMO_simulation/build/limo_car': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jihyun/LIMO_simulation/install/my_valet_parking:/opt/ros/humble /usr/bin/cmake --install /home/jihyun/LIMO_simulation/build/limo_car
+[0.589s] -- Install configuration: ""
+[0.589s] -- Execute custom install script
+[0.589s] -- Symlinking: /home/jihyun/LIMO_simulation/install/limo_car/share/limo_car/launch/ackermann.launch.py
+[0.597s] -- Symlinking: /home/jihyun/LIMO_simulation/install/limo_car/share/limo_car/launch/ackermann_gazebo.launch.py
+[0.602s] -- Symlinking: /home/jihyun/LIMO_simulation/install/limo_car/share/limo_car/launch/display_ackermann.launch.py
+[0.609s] -- Symlinking: /home/jihyun/LIMO_simulation/install/limo_car/share/limo_car/gazebo/ackermann.xacro
+[0.616s] -- Symlinking: /home/jihyun/LIMO_simulation/install/limo_car/share/limo_car/gazebo/ackermann_with_sensor.xacro
+[0.622s] -- Symlinking: /home/jihyun/LIMO_simulation/install/limo_car/share/limo_car/gazebo/sensor.xacro
+[0.629s] -- Symlinking: /home/jihyun/LIMO_simulation/install/limo_car/share/limo_car/meshes/limo_base.dae
+[0.635s] -- Symlinking: /home/jihyun/LIMO_simulation/install/limo_car/share/limo_car/meshes/limo_base.stl
+[0.642s] -- Symlinking: /home/jihyun/LIMO_simulation/install/limo_car/share/limo_car/meshes/limo_wheel.dae
+[0.650s] -- Symlinking: /home/jihyun/LIMO_simulation/install/limo_car/share/limo_car/meshes/limo_wheel.stl
+[0.658s] -- Symlinking: /home/jihyun/LIMO_simulation/install/limo_car/share/limo_car/rviz/gazebo.rviz
+[0.663s] -- Symlinking: /home/jihyun/LIMO_simulation/install/limo_car/share/limo_car/rviz/urdf.rviz
+[0.672s] -- Symlinking: /home/jihyun/LIMO_simulation/install/limo_car/share/limo_car/urdf/limo_ackerman_base.xacro
+[0.680s] -- Symlinking: /home/jihyun/LIMO_simulation/install/limo_car/share/limo_car/urdf/limo_anteil.xacro
+[0.689s] -- Symlinking: /home/jihyun/LIMO_simulation/install/limo_car/share/limo_car/urdf/limo_steering_hinge.xacro
+[0.699s] -- Symlinking: /home/jihyun/LIMO_simulation/install/limo_car/share/ament_index/resource_index/package_run_dependencies/limo_car
+[0.710s] -- Symlinking: /home/jihyun/LIMO_simulation/install/limo_car/share/ament_index/resource_index/parent_prefix_path/limo_car
+[0.719s] -- Symlinking: /home/jihyun/LIMO_simulation/install/limo_car/share/limo_car/environment/ament_prefix_path.sh
+[0.730s] -- Symlinking: /home/jihyun/LIMO_simulation/install/limo_car/share/limo_car/environment/ament_prefix_path.dsv
+[0.737s] -- Symlinking: /home/jihyun/LIMO_simulation/install/limo_car/share/limo_car/environment/path.sh
+[0.746s] -- Symlinking: /home/jihyun/LIMO_simulation/install/limo_car/share/limo_car/environment/path.dsv
+[0.754s] -- Symlinking: /home/jihyun/LIMO_simulation/install/limo_car/share/limo_car/local_setup.bash
+[0.760s] -- Symlinking: /home/jihyun/LIMO_simulation/install/limo_car/share/limo_car/local_setup.sh
+[0.769s] -- Symlinking: /home/jihyun/LIMO_simulation/install/limo_car/share/limo_car/local_setup.zsh
+[0.774s] -- Symlinking: /home/jihyun/LIMO_simulation/install/limo_car/share/limo_car/local_setup.dsv
+[0.779s] -- Symlinking: /home/jihyun/LIMO_simulation/install/limo_car/share/limo_car/package.dsv
+[0.787s] -- Symlinking: /home/jihyun/LIMO_simulation/install/limo_car/share/ament_index/resource_index/packages/limo_car
+[0.796s] -- Symlinking: /home/jihyun/LIMO_simulation/install/limo_car/share/limo_car/cmake/limo_carConfig.cmake
+[0.800s] -- Symlinking: /home/jihyun/LIMO_simulation/install/limo_car/share/limo_car/cmake/limo_carConfig-version.cmake
+[0.809s] -- Symlinking: /home/jihyun/LIMO_simulation/install/limo_car/share/limo_car/package.xml
+[0.815s] Invoked command in '/home/jihyun/LIMO_simulation/build/limo_car' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jihyun/LIMO_simulation/install/my_valet_parking:/opt/ros/humble /usr/bin/cmake --install /home/jihyun/LIMO_simulation/build/limo_car

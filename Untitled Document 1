@@ -1,0 +1,5 @@
+ros2 launch f1tenth_gym_ros gym_bridge_launch.py
+
+ros2 run key_teleop key_teleop
+
+python3 ~/parking_ws/src/my_valet_parking/my_valet_parking/valet_parking_node.py

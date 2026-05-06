@@ -1,0 +1,42 @@
+[0.211s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/jihyun/LIMO_simulation/install/my_valet_parking' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.211s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/jihyun/LIMO_simulation/install/limo_base' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.211s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/jihyun/LIMO_simulation/install/limo_msgs' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.211s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/jihyun/LIMO_simulation/install/limo_gazebosim' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.211s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/jihyun/LIMO_simulation/install/limo_description' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.211s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/jihyun/LIMO_simulation/install/limo_car' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.211s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/jihyun/LIMO_simulation/install/limo_base' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.211s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/jihyun/LIMO_simulation/install/limo_msgs' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.211s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/jihyun/LIMO_simulation/install/limo_gazebosim' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.211s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/jihyun/LIMO_simulation/install/limo_description' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.211s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/jihyun/LIMO_simulation/install/limo_car' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+Starting >>> limo_car
+Starting >>> limo_msgs
+Starting >>> limo_description
+Starting >>> my_valet_parking
+Finished <<< my_valet_parking [0.76s]
+Finished <<< limo_car [0.82s]
+Starting >>> limo_gazebosim
+Finished <<< limo_description [0.83s]
+Finished <<< limo_gazebosim [1.04s]
+Finished <<< limo_msgs [2.94s]
+Starting >>> limo_base
+--- stderr: limo_base
+/home/jihyun/LIMO_simulation/src/limo_base/src/limo_driver.cpp: In member function ‘void AgileX::LimoDriver::parseFrame(const AgileX::LimoFrame&)’:
+/home/jihyun/LIMO_simulation/src/limo_base/src/limo_driver.cpp:298:21: warning: unused variable ‘left_wheel_odom’ [-Wunused-variable]
+  298 |             int32_t left_wheel_odom = (frame.data[3] & 0xff) | (frame.data[2] << 8) |
+      |                     ^~~~~~~~~~~~~~~
+/home/jihyun/LIMO_simulation/src/limo_base/src/limo_driver.cpp:300:21: warning: unused variable ‘right_wheel_odom’ [-Wunused-variable]
+  300 |             int32_t right_wheel_odom = (frame.data[7] & 0xff) | (frame.data[6] << 8) |
+      |                     ^~~~~~~~~~~~~~~~
+/home/jihyun/LIMO_simulation/src/limo_base/src/limo_driver.cpp: In member function ‘void AgileX::LimoDriver::publishIMUData(double)’:
+/home/jihyun/LIMO_simulation/src/limo_base/src/limo_driver.cpp:489:16: warning: unused variable ‘present_theta_’ [-Wunused-variable]
+  489 |         double present_theta_ =imu_data_.yaw;
+      |                ^~~~~~~~~~~~~~
+/home/jihyun/LIMO_simulation/src/limo_base/src/limo_driver.cpp:490:16: warning: unused variable ‘last_theta_’ [-Wunused-variable]
+  490 |         double last_theta_ = imu_data_.yaw;
+      |                ^~~~~~~~~~~
+---
+Finished <<< limo_base [7.45s]
+
+Summary: 6 packages finished [10.6s]
+  1 package had stderr output: limo_base

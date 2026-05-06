@@ -1,0 +1,1 @@
+/home/jihyun/LIMO_simulation/src/limo_gazebosim/scripts/setup_scaled_vehicle_models.py

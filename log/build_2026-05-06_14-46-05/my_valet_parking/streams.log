@@ -1,0 +1,32 @@
+[0.445s] Invoking command in '/home/jihyun/LIMO_simulation/build/my_valet_parking': PYTHONPATH=/home/jihyun/LIMO_simulation/build/my_valet_parking/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jihyun/LIMO_simulation/install/my_valet_parking/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jihyun/LIMO_simulation/build/my_valet_parking/build --no-deps symlink_data
+[0.619s] running develop
+[0.724s] running egg_info
+[0.724s] creating my_valet_parking.egg-info
+[0.724s] writing my_valet_parking.egg-info/PKG-INFO
+[0.724s] writing dependency_links to my_valet_parking.egg-info/dependency_links.txt
+[0.724s] writing entry points to my_valet_parking.egg-info/entry_points.txt
+[0.724s] writing requirements to my_valet_parking.egg-info/requires.txt
+[0.725s] writing top-level names to my_valet_parking.egg-info/top_level.txt
+[0.725s] writing manifest file 'my_valet_parking.egg-info/SOURCES.txt'
+[0.726s] reading manifest file 'my_valet_parking.egg-info/SOURCES.txt'
+[0.726s] writing manifest file 'my_valet_parking.egg-info/SOURCES.txt'
+[0.727s] running build_ext
+[0.727s] Creating /home/jihyun/LIMO_simulation/install/my_valet_parking/lib/python3.10/site-packages/my-valet-parking.egg-link (link to .)
+[0.728s] Installing limo_evasion_controller script to /home/jihyun/LIMO_simulation/install/my_valet_parking/lib/my_valet_parking
+[0.728s] Installing limo_f1tenth_pure_pursuit script to /home/jihyun/LIMO_simulation/install/my_valet_parking/lib/my_valet_parking
+[0.728s] Installing limo_lane_mission script to /home/jihyun/LIMO_simulation/install/my_valet_parking/lib/my_valet_parking
+[0.729s] Installing limo_lane_mission.py script to /home/jihyun/LIMO_simulation/install/my_valet_parking/lib/my_valet_parking
+[0.729s] Installing parking_detector.py script to /home/jihyun/LIMO_simulation/install/my_valet_parking/lib/my_valet_parking
+[0.729s] Installing limo_parking_planner.py script to /home/jihyun/LIMO_simulation/install/my_valet_parking/lib/my_valet_parking
+[0.730s] Installing simple_straight_mission.py script to /home/jihyun/LIMO_simulation/install/my_valet_parking/lib/my_valet_parking
+[0.730s] 
+[0.730s] Installed /home/jihyun/LIMO_simulation/build/my_valet_parking
+[0.730s] running symlink_data
+[0.730s] creating /home/jihyun/LIMO_simulation/install/my_valet_parking/share/ament_index
+[0.730s] creating /home/jihyun/LIMO_simulation/install/my_valet_parking/share/ament_index/resource_index
+[0.730s] creating /home/jihyun/LIMO_simulation/install/my_valet_parking/share/ament_index/resource_index/packages
+[0.730s] symbolically linking /home/jihyun/LIMO_simulation/build/my_valet_parking/resource/my_valet_parking -> /home/jihyun/LIMO_simulation/install/my_valet_parking/share/ament_index/resource_index/packages
+[0.730s] symbolically linking /home/jihyun/LIMO_simulation/build/my_valet_parking/package.xml -> /home/jihyun/LIMO_simulation/install/my_valet_parking/share/my_valet_parking
+[0.730s] creating /home/jihyun/LIMO_simulation/install/my_valet_parking/share/my_valet_parking/rviz
+[0.730s] symbolically linking /home/jihyun/LIMO_simulation/build/my_valet_parking/rviz/parking_status.rviz -> /home/jihyun/LIMO_simulation/install/my_valet_parking/share/my_valet_parking/rviz
+[0.752s] Invoked command in '/home/jihyun/LIMO_simulation/build/my_valet_parking' returned '0': PYTHONPATH=/home/jihyun/LIMO_simulation/build/my_valet_parking/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jihyun/LIMO_simulation/install/my_valet_parking/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jihyun/LIMO_simulation/build/my_valet_parking/build --no-deps symlink_data

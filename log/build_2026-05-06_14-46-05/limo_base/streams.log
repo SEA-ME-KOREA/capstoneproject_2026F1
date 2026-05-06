@@ -1,0 +1,103 @@
+[0.009s] Invoking command in '/home/jihyun/LIMO_simulation/build/limo_base': CMAKE_PREFIX_PATH=/home/jihyun/LIMO_simulation/install/limo_msgs:/home/jihyun/LIMO_simulation/install/limo_base:/home/jihyun/LIMO_simulation/install/limo_gazebosim:/home/jihyun/LIMO_simulation/install/limo_description:/home/jihyun/LIMO_simulation/install/limo_car:/home/jihyun/parking_ws/install/limo_base:/home/jihyun/parking_ws/install/limo_msgs:/home/jihyun/parking_ws/install/limo_description:/home/jihyun/parking_ws/install/limo_car:/opt/openrobots:/home/jihyun/pico_ws/install/picoxr:/home/jihyun/pico_ws/install/gripper_control:/home/jihyun/pico_ws/install/xr_msgs:/opt/openrobots:/home/jihyun/LIMO_simulation/install/my_valet_parking:/opt/ros/humble /usr/bin/cmake /home/jihyun/LIMO_simulation/src/limo_base -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jihyun/LIMO_simulation/install/limo_base
+[0.051s] -- The C compiler identification is GNU 11.4.0
+[0.091s] -- The CXX compiler identification is GNU 11.4.0
+[0.096s] -- Detecting C compiler ABI info
+[0.156s] -- Detecting C compiler ABI info - done
+[0.164s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.164s] -- Detecting C compile features
+[0.164s] -- Detecting C compile features - done
+[0.166s] -- Detecting CXX compiler ABI info
+[0.228s] -- Detecting CXX compiler ABI info - done
+[0.232s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.232s] -- Detecting CXX compile features
+[0.232s] -- Detecting CXX compile features - done
+[0.234s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.320s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.360s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.385s] -- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)
+[0.414s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.418s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.423s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.432s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.442s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.473s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.475s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.559s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.578s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.606s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.613s] -- Looking for pthread.h
+[0.668s] -- Looking for pthread.h - found
+[0.669s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.728s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.730s] -- Found Threads: TRUE  
+[0.768s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.776s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.787s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.797s] -- Found tf2: 0.25.18 (/opt/ros/humble/share/tf2/cmake)
+[0.804s] -- Found tf2_ros: 0.25.18 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.862s] -- Found limo_msgs: 0.0.0 (/home/jihyun/LIMO_simulation/install/limo_msgs/share/limo_msgs/cmake)
+[0.871s] -- Found tf2_geometry_msgs: 0.25.18 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[0.882s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.882s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[0.883s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.885s] -- Found turtlesim: 1.4.3 (/opt/ros/humble/share/turtlesim/cmake)
+[0.955s] -- Configuring done
+[0.964s] -- Generating done
+[0.967s] -- Build files have been written to: /home/jihyun/LIMO_simulation/build/limo_base
+[0.976s] Invoked command in '/home/jihyun/LIMO_simulation/build/limo_base' returned '0': CMAKE_PREFIX_PATH=/home/jihyun/LIMO_simulation/install/limo_msgs:/home/jihyun/LIMO_simulation/install/limo_base:/home/jihyun/LIMO_simulation/install/limo_gazebosim:/home/jihyun/LIMO_simulation/install/limo_description:/home/jihyun/LIMO_simulation/install/limo_car:/home/jihyun/parking_ws/install/limo_base:/home/jihyun/parking_ws/install/limo_msgs:/home/jihyun/parking_ws/install/limo_description:/home/jihyun/parking_ws/install/limo_car:/opt/openrobots:/home/jihyun/pico_ws/install/picoxr:/home/jihyun/pico_ws/install/gripper_control:/home/jihyun/pico_ws/install/xr_msgs:/opt/openrobots:/home/jihyun/LIMO_simulation/install/my_valet_parking:/opt/ros/humble /usr/bin/cmake /home/jihyun/LIMO_simulation/src/limo_base -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jihyun/LIMO_simulation/install/limo_base
+[0.976s] Invoking command in '/home/jihyun/LIMO_simulation/build/limo_base': CMAKE_PREFIX_PATH=/home/jihyun/LIMO_simulation/install/limo_msgs:/home/jihyun/LIMO_simulation/install/limo_base:/home/jihyun/LIMO_simulation/install/limo_gazebosim:/home/jihyun/LIMO_simulation/install/limo_description:/home/jihyun/LIMO_simulation/install/limo_car:/home/jihyun/parking_ws/install/limo_base:/home/jihyun/parking_ws/install/limo_msgs:/home/jihyun/parking_ws/install/limo_description:/home/jihyun/parking_ws/install/limo_car:/opt/openrobots:/home/jihyun/pico_ws/install/picoxr:/home/jihyun/pico_ws/install/gripper_control:/home/jihyun/pico_ws/install/xr_msgs:/opt/openrobots:/home/jihyun/LIMO_simulation/install/my_valet_parking:/opt/ros/humble /usr/bin/cmake --build /home/jihyun/LIMO_simulation/build/limo_base -- -j22 -l22
+[1.018s] [ 16%] Building CXX object CMakeFiles/limo_base.dir/src/limo_base_node.cpp.o
+[1.019s] [ 33%] Building CXX object CMakeFiles/limo_base.dir/src/serial_port.cpp.o
+[1.020s] [ 50%] Building CXX object CMakeFiles/limo_base.dir/src/limo_driver.cpp.o
+[1.021s] [ 66%] Building CXX object CMakeFiles/tf_pub.dir/src/tf_pub.cpp.o
+[2.587s] /home/jihyun/LIMO_simulation/src/limo_base/src/limo_driver.cpp: In member function ‘void AgileX::LimoDriver::parseFrame(const AgileX::LimoFrame&)’:
+[2.587s] /home/jihyun/LIMO_simulation/src/limo_base/src/limo_driver.cpp:298:21: warning: unused variable ‘left_wheel_odom’ [-Wunused-variable]
+[2.587s]   298 |             int32_t left_wheel_odom = (frame.data[3] & 0xff) | (frame.data[2] << 8) |
+[2.587s]       |                     ^~~~~~~~~~~~~~~
+[2.587s] /home/jihyun/LIMO_simulation/src/limo_base/src/limo_driver.cpp:300:21: warning: unused variable ‘right_wheel_odom’ [-Wunused-variable]
+[2.587s]   300 |             int32_t right_wheel_odom = (frame.data[7] & 0xff) | (frame.data[6] << 8) |
+[2.587s]       |                     ^~~~~~~~~~~~~~~~
+[2.590s] /home/jihyun/LIMO_simulation/src/limo_base/src/limo_driver.cpp: In member function ‘void AgileX::LimoDriver::publishIMUData(double)’:
+[2.591s] /home/jihyun/LIMO_simulation/src/limo_base/src/limo_driver.cpp:489:16: warning: unused variable ‘present_theta_’ [-Wunused-variable]
+[2.591s]   489 |         double present_theta_ =imu_data_.yaw;
+[2.591s]       |                ^~~~~~~~~~~~~~
+[2.591s] /home/jihyun/LIMO_simulation/src/limo_base/src/limo_driver.cpp:490:16: warning: unused variable ‘last_theta_’ [-Wunused-variable]
+[2.591s]   490 |         double last_theta_ = imu_data_.yaw;
+[2.591s]       |                ^~~~~~~~~~~
+[3.600s] [ 83%] Linking CXX executable tf_pub
+[3.727s] [ 83%] Built target tf_pub
+[6.939s] [100%] Linking CXX executable limo_base
+[7.244s] [100%] Built target limo_base
+[7.255s] Invoked command in '/home/jihyun/LIMO_simulation/build/limo_base' returned '0': CMAKE_PREFIX_PATH=/home/jihyun/LIMO_simulation/install/limo_msgs:/home/jihyun/LIMO_simulation/install/limo_base:/home/jihyun/LIMO_simulation/install/limo_gazebosim:/home/jihyun/LIMO_simulation/install/limo_description:/home/jihyun/LIMO_simulation/install/limo_car:/home/jihyun/parking_ws/install/limo_base:/home/jihyun/parking_ws/install/limo_msgs:/home/jihyun/parking_ws/install/limo_description:/home/jihyun/parking_ws/install/limo_car:/opt/openrobots:/home/jihyun/pico_ws/install/picoxr:/home/jihyun/pico_ws/install/gripper_control:/home/jihyun/pico_ws/install/xr_msgs:/opt/openrobots:/home/jihyun/LIMO_simulation/install/my_valet_parking:/opt/ros/humble /usr/bin/cmake --build /home/jihyun/LIMO_simulation/build/limo_base -- -j22 -l22
+[7.256s] Invoking command in '/home/jihyun/LIMO_simulation/build/limo_base': CMAKE_PREFIX_PATH=/home/jihyun/LIMO_simulation/install/limo_msgs:/home/jihyun/LIMO_simulation/install/limo_base:/home/jihyun/LIMO_simulation/install/limo_gazebosim:/home/jihyun/LIMO_simulation/install/limo_description:/home/jihyun/LIMO_simulation/install/limo_car:/home/jihyun/parking_ws/install/limo_base:/home/jihyun/parking_ws/install/limo_msgs:/home/jihyun/parking_ws/install/limo_description:/home/jihyun/parking_ws/install/limo_car:/opt/openrobots:/home/jihyun/pico_ws/install/picoxr:/home/jihyun/pico_ws/install/gripper_control:/home/jihyun/pico_ws/install/xr_msgs:/opt/openrobots:/home/jihyun/LIMO_simulation/install/my_valet_parking:/opt/ros/humble /usr/bin/cmake --install /home/jihyun/LIMO_simulation/build/limo_base
+[7.263s] -- Install configuration: ""
+[7.264s] -- Execute custom install script
+[7.264s] -- Symlinking: /home/jihyun/LIMO_simulation/install/limo_base/include/limo_base/limo_driver.h
+[7.271s] -- Symlinking: /home/jihyun/LIMO_simulation/install/limo_base/include/limo_base/limo_protocol.h
+[7.277s] -- Symlinking: /home/jihyun/LIMO_simulation/install/limo_base/include/limo_base/serial_port.h
+[7.282s] -- Symlinking: /home/jihyun/LIMO_simulation/install/limo_base/lib/limo_base/limo_base
+[7.290s] -- Symlinking: /home/jihyun/LIMO_simulation/install/limo_base/lib/limo_base/tf_pub
+[7.297s] -- Symlinking: /home/jihyun/LIMO_simulation/install/limo_base/share/limo_base//launch/limo_base.launch.py
+[7.302s] -- Symlinking: /home/jihyun/LIMO_simulation/install/limo_base/share/limo_base//launch/open_ydlidar_launch.py
+[7.308s] -- Symlinking: /home/jihyun/LIMO_simulation/install/limo_base/share/limo_base//launch/start_limo.launch.py
+[7.314s] -- Symlinking: /home/jihyun/LIMO_simulation/install/limo_base/share/limo_base//src/limo_base_node.cpp
+[7.320s] -- Symlinking: /home/jihyun/LIMO_simulation/install/limo_base/share/limo_base//src/limo_driver.cpp
+[7.326s] -- Symlinking: /home/jihyun/LIMO_simulation/install/limo_base/share/limo_base//src/serial_port.cpp
+[7.333s] -- Symlinking: /home/jihyun/LIMO_simulation/install/limo_base/share/limo_base//src/tf_pub.cpp
+[7.339s] -- Symlinking: /home/jihyun/LIMO_simulation/install/limo_base/share/ament_index/resource_index/package_run_dependencies/limo_base
+[7.345s] -- Symlinking: /home/jihyun/LIMO_simulation/install/limo_base/share/ament_index/resource_index/parent_prefix_path/limo_base
+[7.350s] -- Symlinking: /home/jihyun/LIMO_simulation/install/limo_base/share/limo_base/environment/ament_prefix_path.sh
+[7.358s] -- Symlinking: /home/jihyun/LIMO_simulation/install/limo_base/share/limo_base/environment/ament_prefix_path.dsv
+[7.363s] -- Symlinking: /home/jihyun/LIMO_simulation/install/limo_base/share/limo_base/environment/path.sh
+[7.368s] -- Symlinking: /home/jihyun/LIMO_simulation/install/limo_base/share/limo_base/environment/path.dsv
+[7.373s] -- Symlinking: /home/jihyun/LIMO_simulation/install/limo_base/share/limo_base/local_setup.bash
+[7.379s] -- Symlinking: /home/jihyun/LIMO_simulation/install/limo_base/share/limo_base/local_setup.sh
+[7.385s] -- Symlinking: /home/jihyun/LIMO_simulation/install/limo_base/share/limo_base/local_setup.zsh
+[7.390s] -- Symlinking: /home/jihyun/LIMO_simulation/install/limo_base/share/limo_base/local_setup.dsv
+[7.396s] -- Symlinking: /home/jihyun/LIMO_simulation/install/limo_base/share/limo_base/package.dsv
+[7.402s] -- Symlinking: /home/jihyun/LIMO_simulation/install/limo_base/share/ament_index/resource_index/packages/limo_base
+[7.408s] -- Symlinking: /home/jihyun/LIMO_simulation/install/limo_base/share/limo_base/cmake/ament_cmake_export_include_directories-extras.cmake
+[7.415s] -- Symlinking: /home/jihyun/LIMO_simulation/install/limo_base/share/limo_base/cmake/limo_baseConfig.cmake
+[7.422s] -- Symlinking: /home/jihyun/LIMO_simulation/install/limo_base/share/limo_base/cmake/limo_baseConfig-version.cmake
+[7.429s] -- Symlinking: /home/jihyun/LIMO_simulation/install/limo_base/share/limo_base/package.xml
+[7.436s] Invoked command in '/home/jihyun/LIMO_simulation/build/limo_base' returned '0': CMAKE_PREFIX_PATH=/home/jihyun/LIMO_simulation/install/limo_msgs:/home/jihyun/LIMO_simulation/install/limo_base:/home/jihyun/LIMO_simulation/install/limo_gazebosim:/home/jihyun/LIMO_simulation/install/limo_description:/home/jihyun/LIMO_simulation/install/limo_car:/home/jihyun/parking_ws/install/limo_base:/home/jihyun/parking_ws/install/limo_msgs:/home/jihyun/parking_ws/install/limo_description:/home/jihyun/parking_ws/install/limo_car:/opt/openrobots:/home/jihyun/pico_ws/install/picoxr:/home/jihyun/pico_ws/install/gripper_control:/home/jihyun/pico_ws/install/xr_msgs:/opt/openrobots:/home/jihyun/LIMO_simulation/install/my_valet_parking:/opt/ros/humble /usr/bin/cmake --install /home/jihyun/LIMO_simulation/build/limo_base

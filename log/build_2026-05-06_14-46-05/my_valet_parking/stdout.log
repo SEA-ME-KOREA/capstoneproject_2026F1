@@ -1,0 +1,30 @@
+running develop
+running egg_info
+creating my_valet_parking.egg-info
+writing my_valet_parking.egg-info/PKG-INFO
+writing dependency_links to my_valet_parking.egg-info/dependency_links.txt
+writing entry points to my_valet_parking.egg-info/entry_points.txt
+writing requirements to my_valet_parking.egg-info/requires.txt
+writing top-level names to my_valet_parking.egg-info/top_level.txt
+writing manifest file 'my_valet_parking.egg-info/SOURCES.txt'
+reading manifest file 'my_valet_parking.egg-info/SOURCES.txt'
+writing manifest file 'my_valet_parking.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/jihyun/LIMO_simulation/install/my_valet_parking/lib/python3.10/site-packages/my-valet-parking.egg-link (link to .)
+Installing limo_evasion_controller script to /home/jihyun/LIMO_simulation/install/my_valet_parking/lib/my_valet_parking
+Installing limo_f1tenth_pure_pursuit script to /home/jihyun/LIMO_simulation/install/my_valet_parking/lib/my_valet_parking
+Installing limo_lane_mission script to /home/jihyun/LIMO_simulation/install/my_valet_parking/lib/my_valet_parking
+Installing limo_lane_mission.py script to /home/jihyun/LIMO_simulation/install/my_valet_parking/lib/my_valet_parking
+Installing parking_detector.py script to /home/jihyun/LIMO_simulation/install/my_valet_parking/lib/my_valet_parking
+Installing limo_parking_planner.py script to /home/jihyun/LIMO_simulation/install/my_valet_parking/lib/my_valet_parking
+Installing simple_straight_mission.py script to /home/jihyun/LIMO_simulation/install/my_valet_parking/lib/my_valet_parking
+
+Installed /home/jihyun/LIMO_simulation/build/my_valet_parking
+running symlink_data
+creating /home/jihyun/LIMO_simulation/install/my_valet_parking/share/ament_index
+creating /home/jihyun/LIMO_simulation/install/my_valet_parking/share/ament_index/resource_index
+creating /home/jihyun/LIMO_simulation/install/my_valet_parking/share/ament_index/resource_index/packages
+symbolically linking /home/jihyun/LIMO_simulation/build/my_valet_parking/resource/my_valet_parking -> /home/jihyun/LIMO_simulation/install/my_valet_parking/share/ament_index/resource_index/packages
+symbolically linking /home/jihyun/LIMO_simulation/build/my_valet_parking/package.xml -> /home/jihyun/LIMO_simulation/install/my_valet_parking/share/my_valet_parking
+creating /home/jihyun/LIMO_simulation/install/my_valet_parking/share/my_valet_parking/rviz
+symbolically linking /home/jihyun/LIMO_simulation/build/my_valet_parking/rviz/parking_status.rviz -> /home/jihyun/LIMO_simulation/install/my_valet_parking/share/my_valet_parking/rviz

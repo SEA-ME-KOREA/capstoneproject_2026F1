@@ -1,0 +1,9 @@
+[INFO] [launch]: All log files can be found below /home/jihyun/.ros/log/2026-05-06-14-46-44-240450-jihyun-960XGK-15185
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [robot_state_publisher-1]: process started with pid [15208]
+[robot_state_publisher-1] Error:   Failed to build tree: parent link [base_link] of joint [depth_camera_joint] not found.  This is not valid according to the URDF spec. Every link you refer to from a joint needs to be explicitly defined in the robot description. To fix this problem you can either remove this joint [depth_camera_joint] from your urdf file, or add "<link name="base_link" />" to your urdf file.
+[robot_state_publisher-1]          at line 252 in ./urdf_parser/src/model.cpp
+[robot_state_publisher-1] Failed to parse robot description using: urdf_xml_parser/URDFXMLParser
+[robot_state_publisher-1] terminate called after throwing an instance of 'std::runtime_error'
+[robot_state_publisher-1]   what():  Unable to initialize urdf::model from robot description
+[ERROR] [robot_state_publisher-1]: process has died [pid 15208, exit code -6, cmd '/opt/ros/humble/lib/robot_state_publisher/robot_state_publisher --ros-args --params-file /tmp/launch_params_6rka70og'].

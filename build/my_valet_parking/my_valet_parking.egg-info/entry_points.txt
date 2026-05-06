@@ -1,0 +1,5 @@
+[console_scripts]
+limo_evasion_controller = my_valet_parking.limo_evasion_controller:main
+limo_f1tenth_pure_pursuit = my_valet_parking.limo_f1tenth_pure_pursuit:main
+limo_lane_mission = my_valet_parking.limo_lane_mission:main
+

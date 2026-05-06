@@ -1,0 +1,82 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/jihyun/LIMO_simulation/build/limo_gazebosim
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/launch/__pycache__/limo_ackermann_rviz.launch.cpython-310.pyc
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/launch/limo_ackermann_rviz.launch.py
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/worlds/parking_lot.world
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/worlds/parking_lot_scaled_vehicles.world
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/scripts/__pycache__/scale_vehicle_models.cpython-310.pyc
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/scripts/__pycache__/setup_scaled_vehicle_models.cpython-310.pyc
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/scripts/download_parking_garage_model.sh
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/scripts/scale_vehicle_models.py
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/scripts/setup_scaled_vehicle_models.py
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/scripts/start_parking_limo_master.sh
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/models/.gitkeep
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/models/passenger_car/materials/textures/hatchback.png
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/models/passenger_car/meshes/hatchback.mtl
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/models/passenger_car/meshes/hatchback.obj
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/models/passenger_car/model.config
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/models/passenger_car/model.sdf
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/models/prius_hybrid/materials/textures/Hybrid.png
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/models/prius_hybrid/materials/textures/Hybrid_Interior.png
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/models/prius_hybrid/materials/textures/Wheels3.png
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/models/prius_hybrid/meshes/Hybrid.mtl
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/models/prius_hybrid/meshes/Hybrid.obj
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/models/prius_hybrid/model.config
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/models/prius_hybrid/model.sdf
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/models/scaled_passenger_car/materials/textures/hatchback.png
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/models/scaled_passenger_car/meshes/hatchback.mtl
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/models/scaled_passenger_car/meshes/hatchback.obj
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/models/scaled_passenger_car/model.config
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/models/scaled_passenger_car/model.sdf
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/models/scaled_prius_hybrid/materials/textures/Hybrid.png
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/models/scaled_prius_hybrid/materials/textures/Hybrid_Interior.png
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/models/scaled_prius_hybrid/materials/textures/Wheels3.png
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/models/scaled_prius_hybrid/meshes/Hybrid.mtl
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/models/scaled_prius_hybrid/meshes/Hybrid.obj
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/models/scaled_prius_hybrid/model.config
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/models/scaled_prius_hybrid/model.sdf
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/models/scaled_suv/materials/textures/suv.png
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/models/scaled_suv/materials/textures/wheels_01.png
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/models/scaled_suv/meshes/suv.mtl
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/models/scaled_suv/meshes/suv.obj
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/models/scaled_suv/model.config
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/models/scaled_suv/model.sdf
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/models/suv/materials/textures/suv.png
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/models/suv/materials/textures/wheels_01.png
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/models/suv/meshes/suv.mtl
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/models/suv/meshes/suv.obj
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/models/suv/model.config
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/models/suv/model.sdf
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/ament_index/resource_index/package_run_dependencies/limo_gazebosim
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/ament_index/resource_index/parent_prefix_path/limo_gazebosim
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/environment/ament_prefix_path.sh
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/environment/ament_prefix_path.dsv
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/environment/path.sh
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/environment/path.dsv
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/local_setup.bash
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/local_setup.sh
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/local_setup.zsh
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/local_setup.dsv
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/package.dsv
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/ament_index/resource_index/packages/limo_gazebosim
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/cmake/limo_gazebosimConfig.cmake
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/cmake/limo_gazebosimConfig-version.cmake
+-- Symlinking: /home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/package.xml

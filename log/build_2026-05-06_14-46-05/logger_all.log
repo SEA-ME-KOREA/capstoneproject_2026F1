@@ -1,0 +1,493 @@
+[0.068s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.068s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=22, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7569959c3a00>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x756995979000>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x756995979000>>, mixin_verb=('build',))
+[0.170s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.170s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.170s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.170s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.170s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.170s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.170s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/jihyun/LIMO_simulation'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_base) by extensions ['ignore', 'ignore_ament_install']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_base) by extension 'ignore'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_base) by extension 'ignore_ament_install'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_base) by extensions ['colcon_pkg']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_base) by extension 'colcon_pkg'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_base) by extensions ['colcon_meta']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_base) by extension 'colcon_meta'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_base) by extensions ['ros']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_base) by extension 'ros'
+[0.195s] DEBUG:colcon.colcon_core.package_identification:Package 'src/limo_base' with type 'ros.ament_cmake' and name 'limo_base'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_car) by extensions ['ignore', 'ignore_ament_install']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_car) by extension 'ignore'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_car) by extension 'ignore_ament_install'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_car) by extensions ['colcon_pkg']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_car) by extension 'colcon_pkg'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_car) by extensions ['colcon_meta']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_car) by extension 'colcon_meta'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_car) by extensions ['ros']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_car) by extension 'ros'
+[0.196s] DEBUG:colcon.colcon_core.package_identification:Package 'src/limo_car' with type 'ros.ament_cmake' and name 'limo_car'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_description) by extensions ['ignore', 'ignore_ament_install']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_description) by extension 'ignore'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_description) by extension 'ignore_ament_install'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_description) by extensions ['colcon_pkg']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_description) by extension 'colcon_pkg'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_description) by extensions ['colcon_meta']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_description) by extension 'colcon_meta'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_description) by extensions ['ros']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_description) by extension 'ros'
+[0.197s] DEBUG:colcon.colcon_core.package_identification:Package 'src/limo_description' with type 'ros.ament_cmake' and name 'limo_description'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_gazebosim) by extensions ['ignore', 'ignore_ament_install']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_gazebosim) by extension 'ignore'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_gazebosim) by extension 'ignore_ament_install'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_gazebosim) by extensions ['colcon_pkg']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_gazebosim) by extension 'colcon_pkg'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_gazebosim) by extensions ['colcon_meta']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_gazebosim) by extension 'colcon_meta'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_gazebosim) by extensions ['ros']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_gazebosim) by extension 'ros'
+[0.197s] DEBUG:colcon.colcon_core.package_identification:Package 'src/limo_gazebosim' with type 'ros.ament_cmake' and name 'limo_gazebosim'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_msgs) by extension 'ignore'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_msgs) by extension 'ignore_ament_install'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_msgs) by extensions ['colcon_pkg']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_msgs) by extension 'colcon_pkg'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_msgs) by extensions ['colcon_meta']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_msgs) by extension 'colcon_meta'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_msgs) by extensions ['ros']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_msgs) by extension 'ros'
+[0.198s] DEBUG:colcon.colcon_core.package_identification:Package 'src/limo_msgs' with type 'ros.ament_cmake' and name 'limo_msgs'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_valet_parking) by extensions ['ignore', 'ignore_ament_install']
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_valet_parking) by extension 'ignore'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_valet_parking) by extension 'ignore_ament_install'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_valet_parking) by extensions ['colcon_pkg']
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_valet_parking) by extension 'colcon_pkg'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_valet_parking) by extensions ['colcon_meta']
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_valet_parking) by extension 'colcon_meta'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_valet_parking) by extensions ['ros']
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_valet_parking) by extension 'ros'
+[0.199s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_valet_parking' with type 'ros.ament_python' and name 'my_valet_parking'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(src/tmp) by extensions ['ignore', 'ignore_ament_install']
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(src/tmp) by extension 'ignore'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(src/tmp) by extension 'ignore_ament_install'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(src/tmp) by extensions ['colcon_pkg']
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(src/tmp) by extension 'colcon_pkg'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(src/tmp) by extensions ['colcon_meta']
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(src/tmp) by extension 'colcon_meta'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(src/tmp) by extensions ['ros']
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(src/tmp) by extension 'ros'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(src/tmp) by extensions ['cmake', 'python']
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(src/tmp) by extension 'cmake'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(src/tmp) by extension 'python'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(src/tmp) by extensions ['python_setup_py']
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(src/tmp) by extension 'python_setup_py'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(src/tmp/limo_ros2_tmp) by extensions ['ignore', 'ignore_ament_install']
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(src/tmp/limo_ros2_tmp) by extension 'ignore'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(src/tmp/limo_ros2_tmp) ignored
+[0.199s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.199s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.199s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.199s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.199s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.210s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.210s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.211s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/jihyun/LIMO_simulation/install/my_valet_parking' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.211s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/jihyun/LIMO_simulation/install/limo_base' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.211s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/jihyun/LIMO_simulation/install/limo_msgs' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.211s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/jihyun/LIMO_simulation/install/limo_gazebosim' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.211s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/jihyun/LIMO_simulation/install/limo_description' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.211s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/jihyun/LIMO_simulation/install/limo_car' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.211s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/jihyun/LIMO_simulation/install/limo_base' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.211s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/jihyun/LIMO_simulation/install/limo_msgs' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.211s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/jihyun/LIMO_simulation/install/limo_gazebosim' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.211s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/jihyun/LIMO_simulation/install/limo_description' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.211s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/jihyun/LIMO_simulation/install/limo_car' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.212s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/jihyun/LIMO_simulation/install
+[0.212s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/jihyun/parking_ws/install
+[0.212s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/jihyun/pico_ws/install
+[0.213s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 441 installed packages in /opt/ros/humble
+[0.214s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.242s] Level 5:colcon.colcon_core.verb:set package 'limo_car' build argument 'cmake_args' from command line to 'None'
+[0.242s] Level 5:colcon.colcon_core.verb:set package 'limo_car' build argument 'cmake_target' from command line to 'None'
+[0.242s] Level 5:colcon.colcon_core.verb:set package 'limo_car' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.242s] Level 5:colcon.colcon_core.verb:set package 'limo_car' build argument 'cmake_clean_cache' from command line to 'False'
+[0.242s] Level 5:colcon.colcon_core.verb:set package 'limo_car' build argument 'cmake_clean_first' from command line to 'False'
+[0.242s] Level 5:colcon.colcon_core.verb:set package 'limo_car' build argument 'cmake_force_configure' from command line to 'False'
+[0.242s] Level 5:colcon.colcon_core.verb:set package 'limo_car' build argument 'ament_cmake_args' from command line to 'None'
+[0.242s] Level 5:colcon.colcon_core.verb:set package 'limo_car' build argument 'catkin_cmake_args' from command line to 'None'
+[0.242s] Level 5:colcon.colcon_core.verb:set package 'limo_car' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.242s] DEBUG:colcon.colcon_core.verb:Building package 'limo_car' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jihyun/LIMO_simulation/build/limo_car', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jihyun/LIMO_simulation/install/limo_car', 'merge_install': False, 'path': '/home/jihyun/LIMO_simulation/src/limo_car', 'symlink_install': True, 'test_result_base': None}
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'limo_description' build argument 'cmake_args' from command line to 'None'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'limo_description' build argument 'cmake_target' from command line to 'None'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'limo_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'limo_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'limo_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'limo_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'limo_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'limo_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'limo_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.243s] DEBUG:colcon.colcon_core.verb:Building package 'limo_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jihyun/LIMO_simulation/build/limo_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jihyun/LIMO_simulation/install/limo_description', 'merge_install': False, 'path': '/home/jihyun/LIMO_simulation/src/limo_description', 'symlink_install': True, 'test_result_base': None}
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'limo_msgs' build argument 'cmake_args' from command line to 'None'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'limo_msgs' build argument 'cmake_target' from command line to 'None'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'limo_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'limo_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'limo_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'limo_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'limo_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'limo_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'limo_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.243s] DEBUG:colcon.colcon_core.verb:Building package 'limo_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jihyun/LIMO_simulation/build/limo_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jihyun/LIMO_simulation/install/limo_msgs', 'merge_install': False, 'path': '/home/jihyun/LIMO_simulation/src/limo_msgs', 'symlink_install': True, 'test_result_base': None}
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'my_valet_parking' build argument 'cmake_args' from command line to 'None'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'my_valet_parking' build argument 'cmake_target' from command line to 'None'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'my_valet_parking' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'my_valet_parking' build argument 'cmake_clean_cache' from command line to 'False'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'my_valet_parking' build argument 'cmake_clean_first' from command line to 'False'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'my_valet_parking' build argument 'cmake_force_configure' from command line to 'False'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'my_valet_parking' build argument 'ament_cmake_args' from command line to 'None'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'my_valet_parking' build argument 'catkin_cmake_args' from command line to 'None'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'my_valet_parking' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.243s] DEBUG:colcon.colcon_core.verb:Building package 'my_valet_parking' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jihyun/LIMO_simulation/build/my_valet_parking', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jihyun/LIMO_simulation/install/my_valet_parking', 'merge_install': False, 'path': '/home/jihyun/LIMO_simulation/src/my_valet_parking', 'symlink_install': True, 'test_result_base': None}
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'limo_base' build argument 'cmake_args' from command line to 'None'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'limo_base' build argument 'cmake_target' from command line to 'None'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'limo_base' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'limo_base' build argument 'cmake_clean_cache' from command line to 'False'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'limo_base' build argument 'cmake_clean_first' from command line to 'False'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'limo_base' build argument 'cmake_force_configure' from command line to 'False'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'limo_base' build argument 'ament_cmake_args' from command line to 'None'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'limo_base' build argument 'catkin_cmake_args' from command line to 'None'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'limo_base' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.244s] DEBUG:colcon.colcon_core.verb:Building package 'limo_base' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jihyun/LIMO_simulation/build/limo_base', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jihyun/LIMO_simulation/install/limo_base', 'merge_install': False, 'path': '/home/jihyun/LIMO_simulation/src/limo_base', 'symlink_install': True, 'test_result_base': None}
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'limo_gazebosim' build argument 'cmake_args' from command line to 'None'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'limo_gazebosim' build argument 'cmake_target' from command line to 'None'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'limo_gazebosim' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'limo_gazebosim' build argument 'cmake_clean_cache' from command line to 'False'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'limo_gazebosim' build argument 'cmake_clean_first' from command line to 'False'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'limo_gazebosim' build argument 'cmake_force_configure' from command line to 'False'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'limo_gazebosim' build argument 'ament_cmake_args' from command line to 'None'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'limo_gazebosim' build argument 'catkin_cmake_args' from command line to 'None'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'limo_gazebosim' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.244s] DEBUG:colcon.colcon_core.verb:Building package 'limo_gazebosim' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jihyun/LIMO_simulation/build/limo_gazebosim', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jihyun/LIMO_simulation/install/limo_gazebosim', 'merge_install': False, 'path': '/home/jihyun/LIMO_simulation/src/limo_gazebosim', 'symlink_install': True, 'test_result_base': None}
+[0.244s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.245s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.245s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jihyun/LIMO_simulation/src/limo_car' with build type 'ament_cmake'
+[0.245s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jihyun/LIMO_simulation/src/limo_car'
+[0.246s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.246s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.246s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.249s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jihyun/LIMO_simulation/src/limo_msgs' with build type 'ament_cmake'
+[0.249s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jihyun/LIMO_simulation/src/limo_msgs'
+[0.249s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.249s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.251s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jihyun/LIMO_simulation/src/limo_description' with build type 'ament_cmake'
+[0.251s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jihyun/LIMO_simulation/src/limo_description'
+[0.252s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.252s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.255s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/jihyun/LIMO_simulation/src/my_valet_parking' with build type 'ament_python'
+[0.255s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_valet_parking', 'ament_prefix_path')
+[0.255s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jihyun/LIMO_simulation/install/my_valet_parking/share/my_valet_parking/hook/ament_prefix_path.ps1'
+[0.255s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jihyun/LIMO_simulation/install/my_valet_parking/share/my_valet_parking/hook/ament_prefix_path.dsv'
+[0.255s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jihyun/LIMO_simulation/install/my_valet_parking/share/my_valet_parking/hook/ament_prefix_path.sh'
+[0.256s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.256s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.262s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jihyun/LIMO_simulation/build/limo_car': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jihyun/LIMO_simulation/install/my_valet_parking:/opt/ros/humble /usr/bin/cmake /home/jihyun/LIMO_simulation/src/limo_car -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jihyun/LIMO_simulation/install/limo_car
+[0.263s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jihyun/LIMO_simulation/build/limo_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jihyun/LIMO_simulation/install/my_valet_parking:/opt/ros/humble /usr/bin/cmake /home/jihyun/LIMO_simulation/src/limo_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jihyun/LIMO_simulation/install/limo_msgs
+[0.265s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jihyun/LIMO_simulation/build/limo_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jihyun/LIMO_simulation/install/my_valet_parking:/opt/ros/humble /usr/bin/cmake /home/jihyun/LIMO_simulation/src/limo_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jihyun/LIMO_simulation/install/limo_description
+[0.431s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/jihyun/LIMO_simulation/src/my_valet_parking'
+[0.432s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.432s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.701s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jihyun/LIMO_simulation/build/my_valet_parking': PYTHONPATH=/home/jihyun/LIMO_simulation/build/my_valet_parking/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jihyun/LIMO_simulation/install/my_valet_parking/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jihyun/LIMO_simulation/build/my_valet_parking/build --no-deps symlink_data
+[0.784s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jihyun/LIMO_simulation/build/limo_car' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jihyun/LIMO_simulation/install/my_valet_parking:/opt/ros/humble /usr/bin/cmake /home/jihyun/LIMO_simulation/src/limo_car -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jihyun/LIMO_simulation/install/limo_car
+[0.786s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jihyun/LIMO_simulation/build/limo_car': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jihyun/LIMO_simulation/install/my_valet_parking:/opt/ros/humble /usr/bin/cmake --build /home/jihyun/LIMO_simulation/build/limo_car -- -j22 -l22
+[0.788s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jihyun/LIMO_simulation/build/limo_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jihyun/LIMO_simulation/install/my_valet_parking:/opt/ros/humble /usr/bin/cmake /home/jihyun/LIMO_simulation/src/limo_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jihyun/LIMO_simulation/install/limo_description
+[0.789s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jihyun/LIMO_simulation/build/limo_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jihyun/LIMO_simulation/install/my_valet_parking:/opt/ros/humble /usr/bin/cmake --build /home/jihyun/LIMO_simulation/build/limo_description -- -j22 -l22
+[0.818s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jihyun/LIMO_simulation/build/limo_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jihyun/LIMO_simulation/install/my_valet_parking:/opt/ros/humble /usr/bin/cmake --build /home/jihyun/LIMO_simulation/build/limo_description -- -j22 -l22
+[0.826s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jihyun/LIMO_simulation/build/limo_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jihyun/LIMO_simulation/install/my_valet_parking:/opt/ros/humble /usr/bin/cmake --install /home/jihyun/LIMO_simulation/build/limo_description
+[0.827s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jihyun/LIMO_simulation/build/limo_car' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jihyun/LIMO_simulation/install/my_valet_parking:/opt/ros/humble /usr/bin/cmake --build /home/jihyun/LIMO_simulation/build/limo_car -- -j22 -l22
+[0.829s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jihyun/LIMO_simulation/build/limo_car': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jihyun/LIMO_simulation/install/my_valet_parking:/opt/ros/humble /usr/bin/cmake --install /home/jihyun/LIMO_simulation/build/limo_car
+[1.007s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_valet_parking', 'pythonpath_develop')
+[1.007s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jihyun/LIMO_simulation/build/my_valet_parking/share/my_valet_parking/hook/pythonpath_develop.ps1'
+[1.008s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jihyun/LIMO_simulation/build/my_valet_parking' returned '0': PYTHONPATH=/home/jihyun/LIMO_simulation/build/my_valet_parking/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jihyun/LIMO_simulation/install/my_valet_parking/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jihyun/LIMO_simulation/build/my_valet_parking/build --no-deps symlink_data
+[1.008s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jihyun/LIMO_simulation/build/my_valet_parking/share/my_valet_parking/hook/pythonpath_develop.dsv'
+[1.008s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jihyun/LIMO_simulation/build/my_valet_parking/share/my_valet_parking/hook/pythonpath_develop.sh'
+[1.009s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/my_valet_parking' for CMake module files
+[1.010s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/my_valet_parking' for CMake config files
+[1.010s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/my_valet_parking/lib'
+[1.010s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/my_valet_parking/bin'
+[1.010s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/my_valet_parking/lib/pkgconfig/my_valet_parking.pc'
+[1.010s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/my_valet_parking/lib/python3.10/site-packages'
+[1.010s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_valet_parking', 'pythonpath')
+[1.010s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jihyun/LIMO_simulation/install/my_valet_parking/share/my_valet_parking/hook/pythonpath.ps1'
+[1.011s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jihyun/LIMO_simulation/install/my_valet_parking/share/my_valet_parking/hook/pythonpath.dsv'
+[1.011s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jihyun/LIMO_simulation/install/my_valet_parking/share/my_valet_parking/hook/pythonpath.sh'
+[1.011s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/my_valet_parking/bin'
+[1.011s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_valet_parking)
+[1.011s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/LIMO_simulation/install/my_valet_parking/share/my_valet_parking/package.ps1'
+[1.012s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jihyun/LIMO_simulation/install/my_valet_parking/share/my_valet_parking/package.dsv'
+[1.012s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/LIMO_simulation/install/my_valet_parking/share/my_valet_parking/package.sh'
+[1.012s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/LIMO_simulation/install/my_valet_parking/share/my_valet_parking/package.bash'
+[1.013s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/LIMO_simulation/install/my_valet_parking/share/my_valet_parking/package.zsh'
+[1.013s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jihyun/LIMO_simulation/install/my_valet_parking/share/colcon-core/packages/my_valet_parking)
+[1.060s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(limo_car)
+[1.061s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_car' for CMake module files
+[1.061s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jihyun/LIMO_simulation/build/limo_car' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jihyun/LIMO_simulation/install/my_valet_parking:/opt/ros/humble /usr/bin/cmake --install /home/jihyun/LIMO_simulation/build/limo_car
+[1.061s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_car' for CMake config files
+[1.062s] Level 1:colcon.colcon_core.shell:create_environment_hook('limo_car', 'cmake_prefix_path')
+[1.062s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jihyun/LIMO_simulation/install/limo_car/share/limo_car/hook/cmake_prefix_path.ps1'
+[1.063s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jihyun/LIMO_simulation/install/limo_car/share/limo_car/hook/cmake_prefix_path.dsv'
+[1.063s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jihyun/LIMO_simulation/install/limo_car/share/limo_car/hook/cmake_prefix_path.sh'
+[1.064s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_car/bin'
+[1.064s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_car/lib/pkgconfig/limo_car.pc'
+[1.064s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_car/lib/python3.10/site-packages'
+[1.064s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_car/bin'
+[1.064s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/LIMO_simulation/install/limo_car/share/limo_car/package.ps1'
+[1.065s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jihyun/LIMO_simulation/install/limo_car/share/limo_car/package.dsv'
+[1.065s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/LIMO_simulation/install/limo_car/share/limo_car/package.sh'
+[1.065s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/LIMO_simulation/install/limo_car/share/limo_car/package.bash'
+[1.065s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/LIMO_simulation/install/limo_car/share/limo_car/package.zsh'
+[1.065s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jihyun/LIMO_simulation/install/limo_car/share/colcon-core/packages/limo_car)
+[1.066s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(limo_car)
+[1.066s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_car' for CMake module files
+[1.066s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_car' for CMake config files
+[1.066s] Level 1:colcon.colcon_core.shell:create_environment_hook('limo_car', 'cmake_prefix_path')
+[1.066s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jihyun/LIMO_simulation/install/limo_car/share/limo_car/hook/cmake_prefix_path.ps1'
+[1.066s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jihyun/LIMO_simulation/install/limo_car/share/limo_car/hook/cmake_prefix_path.dsv'
+[1.067s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jihyun/LIMO_simulation/install/limo_car/share/limo_car/hook/cmake_prefix_path.sh'
+[1.067s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_car/bin'
+[1.067s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_car/lib/pkgconfig/limo_car.pc'
+[1.067s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_car/lib/python3.10/site-packages'
+[1.067s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_car/bin'
+[1.067s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/LIMO_simulation/install/limo_car/share/limo_car/package.ps1'
+[1.068s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jihyun/LIMO_simulation/install/limo_car/share/limo_car/package.dsv'
+[1.068s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/LIMO_simulation/install/limo_car/share/limo_car/package.sh'
+[1.068s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/LIMO_simulation/install/limo_car/share/limo_car/package.bash'
+[1.068s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/LIMO_simulation/install/limo_car/share/limo_car/package.zsh'
+[1.069s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jihyun/LIMO_simulation/install/limo_car/share/colcon-core/packages/limo_car)
+[1.069s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jihyun/LIMO_simulation/src/limo_gazebosim' with build type 'ament_cmake'
+[1.070s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jihyun/LIMO_simulation/src/limo_gazebosim'
+[1.070s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.070s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.075s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(limo_description)
+[1.075s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_description' for CMake module files
+[1.075s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jihyun/LIMO_simulation/build/limo_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jihyun/LIMO_simulation/install/my_valet_parking:/opt/ros/humble /usr/bin/cmake --install /home/jihyun/LIMO_simulation/build/limo_description
+[1.075s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_description' for CMake config files
+[1.076s] Level 1:colcon.colcon_core.shell:create_environment_hook('limo_description', 'cmake_prefix_path')
+[1.076s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jihyun/LIMO_simulation/install/limo_description/share/limo_description/hook/cmake_prefix_path.ps1'
+[1.076s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jihyun/LIMO_simulation/install/limo_description/share/limo_description/hook/cmake_prefix_path.dsv'
+[1.076s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jihyun/LIMO_simulation/install/limo_description/share/limo_description/hook/cmake_prefix_path.sh'
+[1.076s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_description/bin'
+[1.076s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_description/lib/pkgconfig/limo_description.pc'
+[1.076s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_description/lib/python3.10/site-packages'
+[1.077s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_description/bin'
+[1.077s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/LIMO_simulation/install/limo_description/share/limo_description/package.ps1'
+[1.077s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jihyun/LIMO_simulation/install/limo_description/share/limo_description/package.dsv'
+[1.077s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/LIMO_simulation/install/limo_description/share/limo_description/package.sh'
+[1.077s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/LIMO_simulation/install/limo_description/share/limo_description/package.bash'
+[1.078s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/LIMO_simulation/install/limo_description/share/limo_description/package.zsh'
+[1.078s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jihyun/LIMO_simulation/install/limo_description/share/colcon-core/packages/limo_description)
+[1.078s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(limo_description)
+[1.078s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_description' for CMake module files
+[1.078s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_description' for CMake config files
+[1.078s] Level 1:colcon.colcon_core.shell:create_environment_hook('limo_description', 'cmake_prefix_path')
+[1.078s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jihyun/LIMO_simulation/install/limo_description/share/limo_description/hook/cmake_prefix_path.ps1'
+[1.079s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jihyun/LIMO_simulation/install/limo_description/share/limo_description/hook/cmake_prefix_path.dsv'
+[1.079s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jihyun/LIMO_simulation/install/limo_description/share/limo_description/hook/cmake_prefix_path.sh'
+[1.079s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_description/bin'
+[1.079s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_description/lib/pkgconfig/limo_description.pc'
+[1.079s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_description/lib/python3.10/site-packages'
+[1.079s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_description/bin'
+[1.080s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/LIMO_simulation/install/limo_description/share/limo_description/package.ps1'
+[1.080s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jihyun/LIMO_simulation/install/limo_description/share/limo_description/package.dsv'
+[1.080s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/LIMO_simulation/install/limo_description/share/limo_description/package.sh'
+[1.080s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/LIMO_simulation/install/limo_description/share/limo_description/package.bash'
+[1.080s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/LIMO_simulation/install/limo_description/share/limo_description/package.zsh'
+[1.081s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jihyun/LIMO_simulation/install/limo_description/share/colcon-core/packages/limo_description)
+[1.083s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jihyun/LIMO_simulation/build/limo_gazebosim': CMAKE_PREFIX_PATH=/home/jihyun/LIMO_simulation/install/limo_car:/home/jihyun/LIMO_simulation/install/limo_base:/home/jihyun/LIMO_simulation/install/limo_msgs:/home/jihyun/LIMO_simulation/install/limo_gazebosim:/home/jihyun/LIMO_simulation/install/limo_description:/home/jihyun/parking_ws/install/limo_base:/home/jihyun/parking_ws/install/limo_msgs:/home/jihyun/parking_ws/install/limo_description:/home/jihyun/parking_ws/install/limo_car:/opt/openrobots:/home/jihyun/pico_ws/install/picoxr:/home/jihyun/pico_ws/install/gripper_control:/home/jihyun/pico_ws/install/xr_msgs:/opt/openrobots:/home/jihyun/LIMO_simulation/install/my_valet_parking:/opt/ros/humble /usr/bin/cmake /home/jihyun/LIMO_simulation/src/limo_gazebosim -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jihyun/LIMO_simulation/install/limo_gazebosim
+[1.498s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jihyun/LIMO_simulation/build/limo_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jihyun/LIMO_simulation/install/my_valet_parking:/opt/ros/humble /usr/bin/cmake /home/jihyun/LIMO_simulation/src/limo_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jihyun/LIMO_simulation/install/limo_msgs
+[1.499s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jihyun/LIMO_simulation/build/limo_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jihyun/LIMO_simulation/install/my_valet_parking:/opt/ros/humble /usr/bin/cmake --build /home/jihyun/LIMO_simulation/build/limo_msgs -- -j22 -l22
+[1.526s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jihyun/LIMO_simulation/build/limo_gazebosim' returned '0': CMAKE_PREFIX_PATH=/home/jihyun/LIMO_simulation/install/limo_car:/home/jihyun/LIMO_simulation/install/limo_base:/home/jihyun/LIMO_simulation/install/limo_msgs:/home/jihyun/LIMO_simulation/install/limo_gazebosim:/home/jihyun/LIMO_simulation/install/limo_description:/home/jihyun/parking_ws/install/limo_base:/home/jihyun/parking_ws/install/limo_msgs:/home/jihyun/parking_ws/install/limo_description:/home/jihyun/parking_ws/install/limo_car:/opt/openrobots:/home/jihyun/pico_ws/install/picoxr:/home/jihyun/pico_ws/install/gripper_control:/home/jihyun/pico_ws/install/xr_msgs:/opt/openrobots:/home/jihyun/LIMO_simulation/install/my_valet_parking:/opt/ros/humble /usr/bin/cmake /home/jihyun/LIMO_simulation/src/limo_gazebosim -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jihyun/LIMO_simulation/install/limo_gazebosim
+[1.527s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jihyun/LIMO_simulation/build/limo_gazebosim': CMAKE_PREFIX_PATH=/home/jihyun/LIMO_simulation/install/limo_car:/home/jihyun/LIMO_simulation/install/limo_base:/home/jihyun/LIMO_simulation/install/limo_msgs:/home/jihyun/LIMO_simulation/install/limo_gazebosim:/home/jihyun/LIMO_simulation/install/limo_description:/home/jihyun/parking_ws/install/limo_base:/home/jihyun/parking_ws/install/limo_msgs:/home/jihyun/parking_ws/install/limo_description:/home/jihyun/parking_ws/install/limo_car:/opt/openrobots:/home/jihyun/pico_ws/install/picoxr:/home/jihyun/pico_ws/install/gripper_control:/home/jihyun/pico_ws/install/xr_msgs:/opt/openrobots:/home/jihyun/LIMO_simulation/install/my_valet_parking:/opt/ros/humble /usr/bin/cmake --build /home/jihyun/LIMO_simulation/build/limo_gazebosim -- -j22 -l22
+[1.557s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jihyun/LIMO_simulation/build/limo_gazebosim' returned '0': CMAKE_PREFIX_PATH=/home/jihyun/LIMO_simulation/install/limo_car:/home/jihyun/LIMO_simulation/install/limo_base:/home/jihyun/LIMO_simulation/install/limo_msgs:/home/jihyun/LIMO_simulation/install/limo_gazebosim:/home/jihyun/LIMO_simulation/install/limo_description:/home/jihyun/parking_ws/install/limo_base:/home/jihyun/parking_ws/install/limo_msgs:/home/jihyun/parking_ws/install/limo_description:/home/jihyun/parking_ws/install/limo_car:/opt/openrobots:/home/jihyun/pico_ws/install/picoxr:/home/jihyun/pico_ws/install/gripper_control:/home/jihyun/pico_ws/install/xr_msgs:/opt/openrobots:/home/jihyun/LIMO_simulation/install/my_valet_parking:/opt/ros/humble /usr/bin/cmake --build /home/jihyun/LIMO_simulation/build/limo_gazebosim -- -j22 -l22
+[1.558s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jihyun/LIMO_simulation/build/limo_gazebosim': CMAKE_PREFIX_PATH=/home/jihyun/LIMO_simulation/install/limo_car:/home/jihyun/LIMO_simulation/install/limo_base:/home/jihyun/LIMO_simulation/install/limo_msgs:/home/jihyun/LIMO_simulation/install/limo_gazebosim:/home/jihyun/LIMO_simulation/install/limo_description:/home/jihyun/parking_ws/install/limo_base:/home/jihyun/parking_ws/install/limo_msgs:/home/jihyun/parking_ws/install/limo_description:/home/jihyun/parking_ws/install/limo_car:/opt/openrobots:/home/jihyun/pico_ws/install/picoxr:/home/jihyun/pico_ws/install/gripper_control:/home/jihyun/pico_ws/install/xr_msgs:/opt/openrobots:/home/jihyun/LIMO_simulation/install/my_valet_parking:/opt/ros/humble /usr/bin/cmake --install /home/jihyun/LIMO_simulation/build/limo_gazebosim
+[2.099s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(limo_gazebosim)
+[2.099s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_gazebosim' for CMake module files
+[2.100s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jihyun/LIMO_simulation/build/limo_gazebosim' returned '0': CMAKE_PREFIX_PATH=/home/jihyun/LIMO_simulation/install/limo_car:/home/jihyun/LIMO_simulation/install/limo_base:/home/jihyun/LIMO_simulation/install/limo_msgs:/home/jihyun/LIMO_simulation/install/limo_gazebosim:/home/jihyun/LIMO_simulation/install/limo_description:/home/jihyun/parking_ws/install/limo_base:/home/jihyun/parking_ws/install/limo_msgs:/home/jihyun/parking_ws/install/limo_description:/home/jihyun/parking_ws/install/limo_car:/opt/openrobots:/home/jihyun/pico_ws/install/picoxr:/home/jihyun/pico_ws/install/gripper_control:/home/jihyun/pico_ws/install/xr_msgs:/opt/openrobots:/home/jihyun/LIMO_simulation/install/my_valet_parking:/opt/ros/humble /usr/bin/cmake --install /home/jihyun/LIMO_simulation/build/limo_gazebosim
+[2.100s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_gazebosim' for CMake config files
+[2.100s] Level 1:colcon.colcon_core.shell:create_environment_hook('limo_gazebosim', 'cmake_prefix_path')
+[2.101s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/hook/cmake_prefix_path.ps1'
+[2.101s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/hook/cmake_prefix_path.dsv'
+[2.101s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/hook/cmake_prefix_path.sh'
+[2.102s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_gazebosim/bin'
+[2.102s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_gazebosim/lib/pkgconfig/limo_gazebosim.pc'
+[2.102s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_gazebosim/lib/python3.10/site-packages'
+[2.103s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_gazebosim/bin'
+[2.103s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/package.ps1'
+[2.104s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/package.dsv'
+[2.104s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/package.sh'
+[2.104s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/package.bash'
+[2.105s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/package.zsh'
+[2.105s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jihyun/LIMO_simulation/install/limo_gazebosim/share/colcon-core/packages/limo_gazebosim)
+[2.106s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(limo_gazebosim)
+[2.106s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_gazebosim' for CMake module files
+[2.106s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_gazebosim' for CMake config files
+[2.107s] Level 1:colcon.colcon_core.shell:create_environment_hook('limo_gazebosim', 'cmake_prefix_path')
+[2.107s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/hook/cmake_prefix_path.ps1'
+[2.107s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/hook/cmake_prefix_path.dsv'
+[2.108s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/hook/cmake_prefix_path.sh'
+[2.108s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_gazebosim/bin'
+[2.108s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_gazebosim/lib/pkgconfig/limo_gazebosim.pc'
+[2.109s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_gazebosim/lib/python3.10/site-packages'
+[2.109s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_gazebosim/bin'
+[2.109s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/package.ps1'
+[2.110s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/package.dsv'
+[2.110s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/package.sh'
+[2.111s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/package.bash'
+[2.111s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/LIMO_simulation/install/limo_gazebosim/share/limo_gazebosim/package.zsh'
+[2.111s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jihyun/LIMO_simulation/install/limo_gazebosim/share/colcon-core/packages/limo_gazebosim)
+[2.794s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jihyun/LIMO_simulation/build/limo_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jihyun/LIMO_simulation/install/my_valet_parking:/opt/ros/humble /usr/bin/cmake --build /home/jihyun/LIMO_simulation/build/limo_msgs -- -j22 -l22
+[2.796s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jihyun/LIMO_simulation/build/limo_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jihyun/LIMO_simulation/install/my_valet_parking:/opt/ros/humble /usr/bin/cmake --install /home/jihyun/LIMO_simulation/build/limo_msgs
+[3.180s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(limo_msgs)
+[3.181s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jihyun/LIMO_simulation/build/limo_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jihyun/LIMO_simulation/install/my_valet_parking:/opt/ros/humble /usr/bin/cmake --install /home/jihyun/LIMO_simulation/build/limo_msgs
+[3.181s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_msgs' for CMake module files
+[3.182s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_msgs' for CMake config files
+[3.182s] Level 1:colcon.colcon_core.shell:create_environment_hook('limo_msgs', 'cmake_prefix_path')
+[3.182s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jihyun/LIMO_simulation/install/limo_msgs/share/limo_msgs/hook/cmake_prefix_path.ps1'
+[3.183s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jihyun/LIMO_simulation/install/limo_msgs/share/limo_msgs/hook/cmake_prefix_path.dsv'
+[3.183s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jihyun/LIMO_simulation/install/limo_msgs/share/limo_msgs/hook/cmake_prefix_path.sh'
+[3.183s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_msgs/lib'
+[3.183s] Level 1:colcon.colcon_core.shell:create_environment_hook('limo_msgs', 'ld_library_path_lib')
+[3.184s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jihyun/LIMO_simulation/install/limo_msgs/share/limo_msgs/hook/ld_library_path_lib.ps1'
+[3.184s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jihyun/LIMO_simulation/install/limo_msgs/share/limo_msgs/hook/ld_library_path_lib.dsv'
+[3.184s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jihyun/LIMO_simulation/install/limo_msgs/share/limo_msgs/hook/ld_library_path_lib.sh'
+[3.184s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_msgs/bin'
+[3.184s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_msgs/lib/pkgconfig/limo_msgs.pc'
+[3.185s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_msgs/lib/python3.10/site-packages'
+[3.185s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_msgs/bin'
+[3.185s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/LIMO_simulation/install/limo_msgs/share/limo_msgs/package.ps1'
+[3.185s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jihyun/LIMO_simulation/install/limo_msgs/share/limo_msgs/package.dsv'
+[3.186s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/LIMO_simulation/install/limo_msgs/share/limo_msgs/package.sh'
+[3.186s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/LIMO_simulation/install/limo_msgs/share/limo_msgs/package.bash'
+[3.186s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/LIMO_simulation/install/limo_msgs/share/limo_msgs/package.zsh'
+[3.186s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jihyun/LIMO_simulation/install/limo_msgs/share/colcon-core/packages/limo_msgs)
+[3.187s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(limo_msgs)
+[3.187s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_msgs' for CMake module files
+[3.188s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_msgs' for CMake config files
+[3.188s] Level 1:colcon.colcon_core.shell:create_environment_hook('limo_msgs', 'cmake_prefix_path')
+[3.188s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jihyun/LIMO_simulation/install/limo_msgs/share/limo_msgs/hook/cmake_prefix_path.ps1'
+[3.188s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jihyun/LIMO_simulation/install/limo_msgs/share/limo_msgs/hook/cmake_prefix_path.dsv'
+[3.188s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jihyun/LIMO_simulation/install/limo_msgs/share/limo_msgs/hook/cmake_prefix_path.sh'
+[3.189s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_msgs/lib'
+[3.189s] Level 1:colcon.colcon_core.shell:create_environment_hook('limo_msgs', 'ld_library_path_lib')
+[3.189s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jihyun/LIMO_simulation/install/limo_msgs/share/limo_msgs/hook/ld_library_path_lib.ps1'
+[3.189s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jihyun/LIMO_simulation/install/limo_msgs/share/limo_msgs/hook/ld_library_path_lib.dsv'
+[3.190s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jihyun/LIMO_simulation/install/limo_msgs/share/limo_msgs/hook/ld_library_path_lib.sh'
+[3.190s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_msgs/bin'
+[3.190s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_msgs/lib/pkgconfig/limo_msgs.pc'
+[3.190s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_msgs/lib/python3.10/site-packages'
+[3.191s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_msgs/bin'
+[3.191s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/LIMO_simulation/install/limo_msgs/share/limo_msgs/package.ps1'
+[3.191s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jihyun/LIMO_simulation/install/limo_msgs/share/limo_msgs/package.dsv'
+[3.191s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/LIMO_simulation/install/limo_msgs/share/limo_msgs/package.sh'
+[3.192s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/LIMO_simulation/install/limo_msgs/share/limo_msgs/package.bash'
+[3.192s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/LIMO_simulation/install/limo_msgs/share/limo_msgs/package.zsh'
+[3.192s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jihyun/LIMO_simulation/install/limo_msgs/share/colcon-core/packages/limo_msgs)
+[3.192s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jihyun/LIMO_simulation/src/limo_base' with build type 'ament_cmake'
+[3.192s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jihyun/LIMO_simulation/src/limo_base'
+[3.192s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.192s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.202s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jihyun/LIMO_simulation/build/limo_base': CMAKE_PREFIX_PATH=/home/jihyun/LIMO_simulation/install/limo_msgs:/home/jihyun/LIMO_simulation/install/limo_base:/home/jihyun/LIMO_simulation/install/limo_gazebosim:/home/jihyun/LIMO_simulation/install/limo_description:/home/jihyun/LIMO_simulation/install/limo_car:/home/jihyun/parking_ws/install/limo_base:/home/jihyun/parking_ws/install/limo_msgs:/home/jihyun/parking_ws/install/limo_description:/home/jihyun/parking_ws/install/limo_car:/opt/openrobots:/home/jihyun/pico_ws/install/picoxr:/home/jihyun/pico_ws/install/gripper_control:/home/jihyun/pico_ws/install/xr_msgs:/opt/openrobots:/home/jihyun/LIMO_simulation/install/my_valet_parking:/opt/ros/humble /usr/bin/cmake /home/jihyun/LIMO_simulation/src/limo_base -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jihyun/LIMO_simulation/install/limo_base
+[4.169s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jihyun/LIMO_simulation/build/limo_base' returned '0': CMAKE_PREFIX_PATH=/home/jihyun/LIMO_simulation/install/limo_msgs:/home/jihyun/LIMO_simulation/install/limo_base:/home/jihyun/LIMO_simulation/install/limo_gazebosim:/home/jihyun/LIMO_simulation/install/limo_description:/home/jihyun/LIMO_simulation/install/limo_car:/home/jihyun/parking_ws/install/limo_base:/home/jihyun/parking_ws/install/limo_msgs:/home/jihyun/parking_ws/install/limo_description:/home/jihyun/parking_ws/install/limo_car:/opt/openrobots:/home/jihyun/pico_ws/install/picoxr:/home/jihyun/pico_ws/install/gripper_control:/home/jihyun/pico_ws/install/xr_msgs:/opt/openrobots:/home/jihyun/LIMO_simulation/install/my_valet_parking:/opt/ros/humble /usr/bin/cmake /home/jihyun/LIMO_simulation/src/limo_base -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jihyun/LIMO_simulation/install/limo_base
+[4.169s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jihyun/LIMO_simulation/build/limo_base': CMAKE_PREFIX_PATH=/home/jihyun/LIMO_simulation/install/limo_msgs:/home/jihyun/LIMO_simulation/install/limo_base:/home/jihyun/LIMO_simulation/install/limo_gazebosim:/home/jihyun/LIMO_simulation/install/limo_description:/home/jihyun/LIMO_simulation/install/limo_car:/home/jihyun/parking_ws/install/limo_base:/home/jihyun/parking_ws/install/limo_msgs:/home/jihyun/parking_ws/install/limo_description:/home/jihyun/parking_ws/install/limo_car:/opt/openrobots:/home/jihyun/pico_ws/install/picoxr:/home/jihyun/pico_ws/install/gripper_control:/home/jihyun/pico_ws/install/xr_msgs:/opt/openrobots:/home/jihyun/LIMO_simulation/install/my_valet_parking:/opt/ros/humble /usr/bin/cmake --build /home/jihyun/LIMO_simulation/build/limo_base -- -j22 -l22
+[10.448s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jihyun/LIMO_simulation/build/limo_base' returned '0': CMAKE_PREFIX_PATH=/home/jihyun/LIMO_simulation/install/limo_msgs:/home/jihyun/LIMO_simulation/install/limo_base:/home/jihyun/LIMO_simulation/install/limo_gazebosim:/home/jihyun/LIMO_simulation/install/limo_description:/home/jihyun/LIMO_simulation/install/limo_car:/home/jihyun/parking_ws/install/limo_base:/home/jihyun/parking_ws/install/limo_msgs:/home/jihyun/parking_ws/install/limo_description:/home/jihyun/parking_ws/install/limo_car:/opt/openrobots:/home/jihyun/pico_ws/install/picoxr:/home/jihyun/pico_ws/install/gripper_control:/home/jihyun/pico_ws/install/xr_msgs:/opt/openrobots:/home/jihyun/LIMO_simulation/install/my_valet_parking:/opt/ros/humble /usr/bin/cmake --build /home/jihyun/LIMO_simulation/build/limo_base -- -j22 -l22
+[10.449s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jihyun/LIMO_simulation/build/limo_base': CMAKE_PREFIX_PATH=/home/jihyun/LIMO_simulation/install/limo_msgs:/home/jihyun/LIMO_simulation/install/limo_base:/home/jihyun/LIMO_simulation/install/limo_gazebosim:/home/jihyun/LIMO_simulation/install/limo_description:/home/jihyun/LIMO_simulation/install/limo_car:/home/jihyun/parking_ws/install/limo_base:/home/jihyun/parking_ws/install/limo_msgs:/home/jihyun/parking_ws/install/limo_description:/home/jihyun/parking_ws/install/limo_car:/opt/openrobots:/home/jihyun/pico_ws/install/picoxr:/home/jihyun/pico_ws/install/gripper_control:/home/jihyun/pico_ws/install/xr_msgs:/opt/openrobots:/home/jihyun/LIMO_simulation/install/my_valet_parking:/opt/ros/humble /usr/bin/cmake --install /home/jihyun/LIMO_simulation/build/limo_base
+[10.629s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(limo_base)
+[10.629s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jihyun/LIMO_simulation/build/limo_base' returned '0': CMAKE_PREFIX_PATH=/home/jihyun/LIMO_simulation/install/limo_msgs:/home/jihyun/LIMO_simulation/install/limo_base:/home/jihyun/LIMO_simulation/install/limo_gazebosim:/home/jihyun/LIMO_simulation/install/limo_description:/home/jihyun/LIMO_simulation/install/limo_car:/home/jihyun/parking_ws/install/limo_base:/home/jihyun/parking_ws/install/limo_msgs:/home/jihyun/parking_ws/install/limo_description:/home/jihyun/parking_ws/install/limo_car:/opt/openrobots:/home/jihyun/pico_ws/install/picoxr:/home/jihyun/pico_ws/install/gripper_control:/home/jihyun/pico_ws/install/xr_msgs:/opt/openrobots:/home/jihyun/LIMO_simulation/install/my_valet_parking:/opt/ros/humble /usr/bin/cmake --install /home/jihyun/LIMO_simulation/build/limo_base
+[10.630s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_base' for CMake module files
+[10.631s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_base' for CMake config files
+[10.631s] Level 1:colcon.colcon_core.shell:create_environment_hook('limo_base', 'cmake_prefix_path')
+[10.631s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jihyun/LIMO_simulation/install/limo_base/share/limo_base/hook/cmake_prefix_path.ps1'
+[10.632s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jihyun/LIMO_simulation/install/limo_base/share/limo_base/hook/cmake_prefix_path.dsv'
+[10.632s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jihyun/LIMO_simulation/install/limo_base/share/limo_base/hook/cmake_prefix_path.sh'
+[10.633s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_base/lib'
+[10.633s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_base/bin'
+[10.633s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_base/lib/pkgconfig/limo_base.pc'
+[10.633s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_base/lib/python3.10/site-packages'
+[10.633s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_base/bin'
+[10.634s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/LIMO_simulation/install/limo_base/share/limo_base/package.ps1'
+[10.634s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jihyun/LIMO_simulation/install/limo_base/share/limo_base/package.dsv'
+[10.634s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/LIMO_simulation/install/limo_base/share/limo_base/package.sh'
+[10.634s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/LIMO_simulation/install/limo_base/share/limo_base/package.bash'
+[10.635s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/LIMO_simulation/install/limo_base/share/limo_base/package.zsh'
+[10.635s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jihyun/LIMO_simulation/install/limo_base/share/colcon-core/packages/limo_base)
+[10.635s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(limo_base)
+[10.636s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_base' for CMake module files
+[10.636s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_base' for CMake config files
+[10.636s] Level 1:colcon.colcon_core.shell:create_environment_hook('limo_base', 'cmake_prefix_path')
+[10.636s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jihyun/LIMO_simulation/install/limo_base/share/limo_base/hook/cmake_prefix_path.ps1'
+[10.636s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jihyun/LIMO_simulation/install/limo_base/share/limo_base/hook/cmake_prefix_path.dsv'
+[10.637s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jihyun/LIMO_simulation/install/limo_base/share/limo_base/hook/cmake_prefix_path.sh'
+[10.637s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_base/lib'
+[10.637s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_base/bin'
+[10.637s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_base/lib/pkgconfig/limo_base.pc'
+[10.637s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_base/lib/python3.10/site-packages'
+[10.638s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/LIMO_simulation/install/limo_base/bin'
+[10.638s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/LIMO_simulation/install/limo_base/share/limo_base/package.ps1'
+[10.638s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jihyun/LIMO_simulation/install/limo_base/share/limo_base/package.dsv'
+[10.638s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/LIMO_simulation/install/limo_base/share/limo_base/package.sh'
+[10.639s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/LIMO_simulation/install/limo_base/share/limo_base/package.bash'
+[10.639s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/LIMO_simulation/install/limo_base/share/limo_base/package.zsh'
+[10.639s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jihyun/LIMO_simulation/install/limo_base/share/colcon-core/packages/limo_base)
+[10.639s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[10.640s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[10.640s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[10.640s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[10.644s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[10.644s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[10.645s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[10.656s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[10.657s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jihyun/LIMO_simulation/install/local_setup.ps1'
+[10.657s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jihyun/LIMO_simulation/install/_local_setup_util_ps1.py'
+[10.658s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jihyun/LIMO_simulation/install/setup.ps1'
+[10.659s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jihyun/LIMO_simulation/install/local_setup.sh'
+[10.659s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jihyun/LIMO_simulation/install/_local_setup_util_sh.py'
+[10.659s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jihyun/LIMO_simulation/install/setup.sh'
+[10.660s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jihyun/LIMO_simulation/install/local_setup.bash'
+[10.660s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jihyun/LIMO_simulation/install/setup.bash'
+[10.661s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jihyun/LIMO_simulation/install/local_setup.zsh'
+[10.661s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jihyun/LIMO_simulation/install/setup.zsh'
