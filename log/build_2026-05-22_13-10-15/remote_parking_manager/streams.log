@@ -1,0 +1,24 @@
+[0.584s] Invoking command in '/home/jihyun/remote_parking_ws_1/build/remote_parking_manager': PYTHONPATH=/home/jihyun/remote_parking_ws_1/build/remote_parking_manager/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jihyun/remote_parking_ws_1/install/remote_parking_manager/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jihyun/remote_parking_ws_1/build/remote_parking_manager/build --no-deps symlink_data
+[0.734s] running develop
+[0.817s] running egg_info
+[0.817s] creating remote_parking_manager.egg-info
+[0.817s] writing remote_parking_manager.egg-info/PKG-INFO
+[0.817s] writing dependency_links to remote_parking_manager.egg-info/dependency_links.txt
+[0.818s] writing entry points to remote_parking_manager.egg-info/entry_points.txt
+[0.818s] writing requirements to remote_parking_manager.egg-info/requires.txt
+[0.818s] writing top-level names to remote_parking_manager.egg-info/top_level.txt
+[0.818s] writing manifest file 'remote_parking_manager.egg-info/SOURCES.txt'
+[0.820s] reading manifest file 'remote_parking_manager.egg-info/SOURCES.txt'
+[0.820s] writing manifest file 'remote_parking_manager.egg-info/SOURCES.txt'
+[0.820s] running build_ext
+[0.820s] Creating /home/jihyun/remote_parking_ws_1/install/remote_parking_manager/lib/python3.10/site-packages/remote-parking-manager.egg-link (link to .)
+[0.820s] Installing mission_manager script to /home/jihyun/remote_parking_ws_1/install/remote_parking_manager/lib/remote_parking_manager
+[0.821s] 
+[0.821s] Installed /home/jihyun/remote_parking_ws_1/build/remote_parking_manager
+[0.821s] running symlink_data
+[0.821s] creating /home/jihyun/remote_parking_ws_1/install/remote_parking_manager/share/ament_index
+[0.821s] creating /home/jihyun/remote_parking_ws_1/install/remote_parking_manager/share/ament_index/resource_index
+[0.821s] creating /home/jihyun/remote_parking_ws_1/install/remote_parking_manager/share/ament_index/resource_index/packages
+[0.821s] symbolically linking /home/jihyun/remote_parking_ws_1/build/remote_parking_manager/resource/remote_parking_manager -> /home/jihyun/remote_parking_ws_1/install/remote_parking_manager/share/ament_index/resource_index/packages
+[0.821s] symbolically linking /home/jihyun/remote_parking_ws_1/build/remote_parking_manager/package.xml -> /home/jihyun/remote_parking_ws_1/install/remote_parking_manager/share/remote_parking_manager
+[0.840s] Invoked command in '/home/jihyun/remote_parking_ws_1/build/remote_parking_manager' returned '0': PYTHONPATH=/home/jihyun/remote_parking_ws_1/build/remote_parking_manager/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jihyun/remote_parking_ws_1/install/remote_parking_manager/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jihyun/remote_parking_ws_1/build/remote_parking_manager/build --no-deps symlink_data

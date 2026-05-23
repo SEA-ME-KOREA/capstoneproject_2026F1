@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>remote_parking_world</name>
+  <version>0.1.0</version>
+  <description>Remote parking Gazebo world and robot spawn launch</description>
+  <maintainer email="you@example.com">Jihyun</maintainer>
+  <license>MIT</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <exec_depend>gazebo_ros</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>joint_state_publisher</exec_depend>
+  <exec_depend>xacro</exec_depend>
+  <exec_depend>rviz2</exec_depend>
+  <exec_depend>my_valet_parking</exec_depend>
+  <exec_depend>remote_parking_manager</exec_depend>
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

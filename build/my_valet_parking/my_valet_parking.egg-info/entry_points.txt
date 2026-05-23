@@ -1,0 +1,10 @@
+[console_scripts]
+car_exit_controller = my_valet_parking.car_exit_controller:main
+dynamic_tracker_node = my_valet_parking.dynamic_tracker_node:main
+limo2_arrow_teleop = my_valet_parking.limo2_arrow_teleop:main
+limo2_exit_handler = my_valet_parking.limo2_exit_handler:main
+limo_evasion_controller = my_valet_parking.limo_evasion_controller:main
+limo_f1tenth_pure_pursuit = my_valet_parking.limo_f1tenth_pure_pursuit:main
+limo_lane_mission = my_valet_parking.limo_lane_mission:main
+limo_valet_parking_node = my_valet_parking.limo_valet_parking_node:main
+

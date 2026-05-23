@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="static_limo">
+    <static>true</static>
+    <link name="link">
+
+      <inertial>
+        <mass>1.0</mass>
+      </inertial>
+
+      <!-- Collision (simplified box matching LIMO dimensions) -->
+      <collision name="collision">
+        <geometry>
+          <box><size>0.31 0.19 0.12</size></box>
+        </geometry>
+      </collision>
+
+      <!-- Body mesh (limo_base.dae) -->
+      <visual name="body">
+        <pose>0 0 -0.15 0 0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <uri>model://static_limo/meshes/limo_base.dae</uri>
+            <scale>1.2 1.2 1.2</scale>
+          </mesh>
+        </geometry>
+      </visual>
+
+      <!-- Front-left wheel -->
+      <visual name="fl_wheel">
+        <pose>0.12 0.084 -0.10 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://static_limo/meshes/limo_wheel.dae</uri>
+            <scale>1.2 1.2 1.2</scale>
+          </mesh>
+        </geometry>
+      </visual>
+
+      <!-- Front-right wheel -->
+      <visual name="fr_wheel">
+        <pose>0.12 -0.084 -0.10 3.14159 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://static_limo/meshes/limo_wheel.dae</uri>
+            <scale>1.2 1.2 1.2</scale>
+          </mesh>
+        </geometry>
+      </visual>
+
+      <!-- Rear-left wheel -->
+      <visual name="rl_wheel">
+        <pose>-0.12 0.084 -0.10 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://static_limo/meshes/limo_wheel.dae</uri>
+            <scale>1.2 1.2 1.2</scale>
+          </mesh>
+        </geometry>
+      </visual>
+
+      <!-- Rear-right wheel -->
+      <visual name="rr_wheel">
+        <pose>-0.12 -0.084 -0.10 3.14159 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://static_limo/meshes/limo_wheel.dae</uri>
+            <scale>1.2 1.2 1.2</scale>
+          </mesh>
+        </geometry>
+      </visual>
+
+    </link>
+  </model>
+</sdf>

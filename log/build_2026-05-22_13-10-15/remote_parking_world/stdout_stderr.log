@@ -1,0 +1,47 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/jihyun/remote_parking_ws_1/build/remote_parking_world
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/jihyun/remote_parking_ws_1/install/remote_parking_world/share/remote_parking_world//worlds/remote_parking_static.world
+-- Symlinking: /home/jihyun/remote_parking_ws_1/install/remote_parking_world/share/remote_parking_world//launch/spawn_robots.launch.py
+-- Symlinking: /home/jihyun/remote_parking_ws_1/install/remote_parking_world/share/remote_parking_world//launch/world_server.launch.py
+-- Symlinking: /home/jihyun/remote_parking_ws_1/install/remote_parking_world/share/remote_parking_world//scripts/reset_robots.sh
+-- Symlinking: /home/jihyun/remote_parking_ws_1/install/remote_parking_world/share/remote_parking_world//scripts/select_car.sh
+-- Symlinking: /home/jihyun/remote_parking_ws_1/install/remote_parking_world/share/remote_parking_world//urdf/limo_kinematic.urdf.xacro
+-- Symlinking: /home/jihyun/remote_parking_ws_1/install/remote_parking_world/share/remote_parking_world//urdf/limo_with_rear_camera.urdf.xacro
+-- Symlinking: /home/jihyun/remote_parking_ws_1/install/remote_parking_world/share/remote_parking_world//models/static_limo/meshes/limo_base.dae
+-- Symlinking: /home/jihyun/remote_parking_ws_1/install/remote_parking_world/share/remote_parking_world//models/static_limo/meshes/limo_wheel.dae
+-- Symlinking: /home/jihyun/remote_parking_ws_1/install/remote_parking_world/share/remote_parking_world//models/static_limo/model.config
+-- Symlinking: /home/jihyun/remote_parking_ws_1/install/remote_parking_world/share/remote_parking_world//models/static_limo/model.sdf
+-- Up-to-date symlink: /home/jihyun/remote_parking_ws_1/install/remote_parking_world/share/remote_parking_world/scripts/reset_robots.sh
+-- Symlinking: /home/jihyun/remote_parking_ws_1/install/remote_parking_world/share/ament_index/resource_index/package_run_dependencies/remote_parking_world
+-- Symlinking: /home/jihyun/remote_parking_ws_1/install/remote_parking_world/share/ament_index/resource_index/parent_prefix_path/remote_parking_world
+-- Symlinking: /home/jihyun/remote_parking_ws_1/install/remote_parking_world/share/remote_parking_world/environment/ament_prefix_path.sh
+-- Symlinking: /home/jihyun/remote_parking_ws_1/install/remote_parking_world/share/remote_parking_world/environment/ament_prefix_path.dsv
+-- Symlinking: /home/jihyun/remote_parking_ws_1/install/remote_parking_world/share/remote_parking_world/environment/path.sh
+-- Symlinking: /home/jihyun/remote_parking_ws_1/install/remote_parking_world/share/remote_parking_world/environment/path.dsv
+-- Symlinking: /home/jihyun/remote_parking_ws_1/install/remote_parking_world/share/remote_parking_world/local_setup.bash
+-- Symlinking: /home/jihyun/remote_parking_ws_1/install/remote_parking_world/share/remote_parking_world/local_setup.sh
+-- Symlinking: /home/jihyun/remote_parking_ws_1/install/remote_parking_world/share/remote_parking_world/local_setup.zsh
+-- Symlinking: /home/jihyun/remote_parking_ws_1/install/remote_parking_world/share/remote_parking_world/local_setup.dsv
+-- Symlinking: /home/jihyun/remote_parking_ws_1/install/remote_parking_world/share/remote_parking_world/package.dsv
+-- Symlinking: /home/jihyun/remote_parking_ws_1/install/remote_parking_world/share/ament_index/resource_index/packages/remote_parking_world
+-- Symlinking: /home/jihyun/remote_parking_ws_1/install/remote_parking_world/share/remote_parking_world/cmake/remote_parking_worldConfig.cmake
+-- Symlinking: /home/jihyun/remote_parking_ws_1/install/remote_parking_world/share/remote_parking_world/cmake/remote_parking_worldConfig-version.cmake
+-- Symlinking: /home/jihyun/remote_parking_ws_1/install/remote_parking_world/share/remote_parking_world/package.xml

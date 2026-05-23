@@ -1,0 +1,177 @@
+<?xml version="1.0"?>
+<!--
+  limo_with_rear_camera.urdf.xacro
+  ══════════════════════════════════════════════════════════════════
+  LIMO Pro (Ackermann) URDF — 후방 Depth 카메라 추가 버전
+
+  이 파일은 기존 limo_car 패키지의 Ackermann URDF를 include하고
+  후방 카메라 링크 + Gazebo 플러그인을 추가합니다.
+
+  파라미터:
+    robot_name : 로봇 이름 (namespace에 사용, 기본값: limo)
+
+  토픽 (robot_name=limo1 기준):
+    /limo1/front_camera/depth/image_raw      ← 기존 전방 카메라
+    /limo1/rear_camera/depth/image_raw       ← 신규 후방 카메라
+    /limo1/rear_camera/depth/camera_info
+    /limo1/scan                              ← LiDAR
+    /limo1/odom                             ← 오도메트리
+    /limo1/cmd_vel                          ← 속도 명령 (입력)
+
+  카메라 위치:
+    전방: base_link 기준 +x 방향, z=+0.10m, yaw=0
+    후방: base_link 기준 -x 방향, z=+0.10m, yaw=π (뒤쪽을 향함)
+  ══════════════════════════════════════════════════════════════════
+-->
+<robot name="limo" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- ── 파라미터 ────────────────────────────────────────────────── -->
+  <!-- BUG #8 수정: robot_name → robot_namespace (limo_ackerman_base.xacro와 일치) -->
+  <xacro:arg name="robot_namespace" default="/"/>
+  <xacro:property name="robot_ns" value="$(arg robot_namespace)"/>
+
+  <!-- ── 기존 LIMO Ackermann URDF (Gazebo 플러그인 포함) ────────── -->
+  <!--
+    BUG #14 수정: 경로 및 파일 모두 수정
+      변경 전: $(find limo_car)/urdf/limo_ackerman_base.xacro
+               → urdf/ 디렉토리, Gazebo 플러그인 없음
+      변경 후: $(find limo_car)/gazebo/ackermann_with_sensor.xacro
+               → gazebo/ 디렉토리, 모든 Gazebo 센서·드라이브 플러그인 포함
+                 (libgazebo_ros_ackermann_drive, libgazebo_ros_ray_sensor,
+                  libgazebo_ros_camera, libgazebo_ros_imu_sensor)
+    BUG #15 수정: robot_namespace 인자 전달 불필요
+               ackermann_with_sensor.xacro 는 외부 인자를 받지 않음
+               → 네임스페이스는 spawn_entity -robot_namespace 플래그가 처리
+  -->
+  <xacro:include filename="$(find limo_car)/gazebo/ackermann_with_sensor.xacro"/>
+
+  <!-- ════════════════════════════════════════════════════════════
+       후방 카메라 링크 정의
+       위치: base_link 중심에서 후방 -0.30m, 높이 +0.10m
+       방향: yaw=π (후방을 향함)
+       ════════════════════════════════════════════════════════════ -->
+  <link name="rear_camera_link">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.025 0.090 0.025"/>
+      </geometry>
+      <material name="camera_material">
+        <color rgba="0.1 0.1 0.1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.025 0.090 0.025"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.05"/>
+      <inertia ixx="1e-6" ixy="0" ixz="0"
+               iyy="1e-6" iyz="0" izz="1e-6"/>
+    </inertial>
+  </link>
+
+  <!-- 후방 카메라 고정 조인트 -->
+  <joint name="rear_camera_joint" type="fixed">
+    <parent link="base_link"/>
+    <child  link="rear_camera_link"/>
+    <!-- xyz: 후방 -0.30m, 높이 +0.10m  |  rpy: yaw=π (180도 회전) -->
+    <origin xyz="-0.30 0 0.10" rpy="0 0 3.14159"/>
+  </joint>
+
+  <!-- 후방 카메라 광학 프레임 (ROS 카메라 관례: x-right, y-down, z-forward) -->
+  <link name="rear_camera_optical_frame"/>
+  <joint name="rear_camera_optical_joint" type="fixed">
+    <parent link="rear_camera_link"/>
+    <child  link="rear_camera_optical_frame"/>
+    <origin xyz="0 0 0" rpy="-1.5708 0 -1.5708"/>
+  </joint>
+
+  <!-- ════════════════════════════════════════════════════════════
+       Gazebo 후방 Depth 카메라 플러그인
+       ════════════════════════════════════════════════════════════ -->
+  <gazebo reference="rear_camera_link">
+    <sensor name="rear_depth_camera" type="depth">
+      <always_on>true</always_on>
+      <update_rate>15</update_rate>         <!-- 15Hz: CPU 부하 절약 -->
+      <visualize>false</visualize>          <!-- false: 렌더링 비활성 -->
+
+      <camera>
+        <horizontal_fov>1.0472</horizontal_fov>  <!-- 60도 -->
+        <image>
+          <width>320</width>
+          <height>240</height>
+          <format>R8G8B8</format>
+        </image>
+        <clip>
+          <near>0.05</near>
+          <far>3.0</far>    <!-- 후진 시 단거리 감지 충분 -->
+        </clip>
+        <noise>
+          <type>gaussian</type>
+          <mean>0.0</mean>
+          <stddev>0.005</stddev>
+        </noise>
+      </camera>
+
+      <plugin name="rear_depth_camera_plugin"
+              filename="libgazebo_ros_camera.so">
+        <ros>
+          <!--
+            BUG #9 / #15 최종 수정:
+            네임스페이스를 비워둠 → spawn_entity의 -robot_namespace 가 자동 적용
+            limo1 스폰 시: /limo1/rear_camera/depth/image_raw
+            limo2 스폰 시: /limo2/rear_camera/depth/image_raw
+            (hardcoded namespace를 쓰면 limo1/limo2 양쪽이 같은 토픽 충돌)
+          -->
+          <remapping>image_raw:=rear_camera/depth/image_raw</remapping>
+          <remapping>camera_info:=rear_camera/depth/camera_info</remapping>
+          <remapping>points:=rear_camera/points</remapping>
+        </ros>
+        <camera_name>rear_camera</camera_name>
+        <frame_name>rear_camera_optical_frame</frame_name>
+        <min_depth>0.05</min_depth>
+        <max_depth>3.0</max_depth>
+        <hack_baseline>0.0</hack_baseline>
+      </plugin>
+    </sensor>
+  </gazebo>
+
+  <!-- ════════════════════════════════════════════════════════════
+       Gazebo 전방 Depth 카메라 플러그인
+       (기존 limo_car URDF에 없거나 다를 경우 아래 블록 추가)
+       기존 URDF에 이미 전방 카메라가 있다면 이 블록 제거
+       ════════════════════════════════════════════════════════════ -->
+  <!--
+  <gazebo reference="camera_link">
+    <sensor name="front_depth_camera" type="depth">
+      <always_on>true</always_on>
+      <update_rate>15</update_rate>
+      <visualize>false</visualize>
+      <camera>
+        <horizontal_fov>1.0472</horizontal_fov>
+        <image>
+          <width>320</width><height>240</height>
+          <format>R8G8B8</format>
+        </image>
+        <clip><near>0.05</near><far>5.0</far></clip>
+      </camera>
+      <plugin name="front_depth_camera_plugin"
+              filename="libgazebo_ros_camera.so">
+        <ros>
+          <namespace>$(arg robot_name)</namespace>
+          <remapping>image_raw:=front_camera/depth/image_raw</remapping>
+          <remapping>camera_info:=front_camera/depth/camera_info</remapping>
+        </ros>
+        <camera_name>front_camera</camera_name>
+        <frame_name>camera_optical_frame</frame_name>
+        <min_depth>0.05</min_depth>
+        <max_depth>5.0</max_depth>
+      </plugin>
+    </sensor>
+  </gazebo>
+  -->
+
+</robot>

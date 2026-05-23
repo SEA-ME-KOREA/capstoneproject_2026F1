@@ -1,0 +1,177 @@
+<?xml version="1.0"?>
+<!--
+  limo_kinematic.urdf.xacro
+  ackermann 플러그인 대신 planar_move 사용. 양쪽 로봇 공용.
+  gravity=false, cmd_vel → planar_move → odom 발행.
+  LiDAR + 후방 카메라 센서 포함.
+-->
+<robot name="limo_kinematic" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:arg name="robot_namespace" default="/"/>
+
+  <!-- 센서 매크로 (LiDAR, Depth Camera) -->
+  <xacro:include filename="$(find limo_car)/gazebo/sensor.xacro"/>
+
+  <link name="base_link">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 1.5708"/>
+      <geometry>
+        <mesh filename="$(find limo_car)/meshes/limo_base.dae" scale="1.2 1.2 1.2"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.31 0.19 0.12"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="4.34"/>
+      <inertia ixx="0.05" ixy="0" ixz="0" iyy="0.05" iyz="0" izz="0.05"/>
+    </inertial>
+  </link>
+
+  <!-- 바퀴 시각적 표현 (구동 없음, 고정 조인트) -->
+  <link name="front_left_wheel_link">
+    <visual>
+      <geometry>
+        <mesh filename="$(find limo_car)/meshes/limo_wheel.dae" scale="1.2 1.2 1.2"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0.0225 0" rpy="1.5708 0 0"/>
+      <geometry><cylinder length="0.045" radius="0.045"/></geometry>
+    </collision>
+    <inertial><mass value="0.1"/><inertia ixx="1e-4" ixy="0" ixz="0" iyy="1e-4" iyz="0" izz="1e-4"/></inertial>
+  </link>
+  <joint name="front_left_wheel_joint" type="fixed">
+    <parent link="base_link"/><child link="front_left_wheel_link"/>
+    <origin xyz="0.12 0.084 -0.10" rpy="0 0 0"/>
+  </joint>
+
+  <link name="front_right_wheel_link">
+    <visual>
+      <geometry>
+        <mesh filename="$(find limo_car)/meshes/limo_wheel.dae" scale="1.2 1.2 1.2"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0.0225 0" rpy="1.5708 0 0"/>
+      <geometry><cylinder length="0.045" radius="0.045"/></geometry>
+    </collision>
+    <inertial><mass value="0.1"/><inertia ixx="1e-4" ixy="0" ixz="0" iyy="1e-4" iyz="0" izz="1e-4"/></inertial>
+  </link>
+  <joint name="front_right_wheel_joint" type="fixed">
+    <parent link="base_link"/><child link="front_right_wheel_link"/>
+    <origin xyz="0.12 -0.084 -0.10" rpy="3.14159 0 0"/>
+  </joint>
+
+  <link name="rear_left_wheel_link">
+    <visual>
+      <geometry>
+        <mesh filename="$(find limo_car)/meshes/limo_wheel.dae" scale="1.2 1.2 1.2"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0.0225 0" rpy="1.5708 0 0"/>
+      <geometry><cylinder length="0.045" radius="0.045"/></geometry>
+    </collision>
+    <inertial><mass value="0.1"/><inertia ixx="1e-4" ixy="0" ixz="0" iyy="1e-4" iyz="0" izz="1e-4"/></inertial>
+  </link>
+  <joint name="rear_left_wheel_joint" type="fixed">
+    <parent link="base_link"/><child link="rear_left_wheel_link"/>
+    <origin xyz="-0.12 0.084 -0.10" rpy="0 0 0"/>
+  </joint>
+
+  <link name="rear_right_wheel_link">
+    <visual>
+      <geometry>
+        <mesh filename="$(find limo_car)/meshes/limo_wheel.dae" scale="1.2 1.2 1.2"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0.0225 0" rpy="1.5708 0 0"/>
+      <geometry><cylinder length="0.045" radius="0.045"/></geometry>
+    </collision>
+    <inertial><mass value="0.1"/><inertia ixx="1e-4" ixy="0" ixz="0" iyy="1e-4" iyz="0" izz="1e-4"/></inertial>
+  </link>
+  <joint name="rear_right_wheel_joint" type="fixed">
+    <parent link="base_link"/><child link="rear_right_wheel_link"/>
+    <origin xyz="-0.12 -0.084 -0.10" rpy="3.14159 0 0"/>
+  </joint>
+
+  <!-- LiDAR 센서 -->
+  <xacro:gazebo_laser frame_prefix="laser"/>
+  <joint name="laser_joint" type="fixed">
+    <origin xyz="0.1236 0 -0.01" rpy="0 0 0"/>
+    <parent link="base_link"/><child link="laser_link"/>
+  </joint>
+
+  <!-- 후방 카메라 -->
+  <link name="rear_camera_link">
+    <visual><origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry><box size="0.025 0.090 0.025"/></geometry>
+    </visual>
+    <collision><origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry><box size="0.025 0.090 0.025"/></geometry>
+    </collision>
+    <inertial><mass value="0.05"/>
+      <inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6"/>
+    </inertial>
+  </link>
+  <joint name="rear_camera_joint" type="fixed">
+    <parent link="base_link"/><child link="rear_camera_link"/>
+    <origin xyz="-0.30 0 0.10" rpy="0 0 3.14159"/>
+  </joint>
+  <link name="rear_camera_optical_frame"/>
+  <joint name="rear_camera_optical_joint" type="fixed">
+    <parent link="rear_camera_link"/><child link="rear_camera_optical_frame"/>
+    <origin xyz="0 0 0" rpy="-1.5708 0 -1.5708"/>
+  </joint>
+  <gazebo reference="rear_camera_link">
+    <sensor name="rear_depth_camera" type="depth">
+      <always_on>true</always_on><update_rate>15</update_rate><visualize>false</visualize>
+      <camera><horizontal_fov>1.0472</horizontal_fov>
+        <image><width>320</width><height>240</height><format>R8G8B8</format></image>
+        <clip><near>0.05</near><far>3.0</far></clip>
+      </camera>
+      <plugin name="rear_depth_camera_plugin" filename="libgazebo_ros_camera.so">
+        <ros>
+          <remapping>image_raw:=rear_camera/depth/image_raw</remapping>
+          <remapping>camera_info:=rear_camera/depth/camera_info</remapping>
+        </ros>
+        <camera_name>rear_camera</camera_name>
+        <frame_name>rear_camera_optical_frame</frame_name>
+        <min_depth>0.05</min_depth><max_depth>3.0</max_depth>
+      </plugin>
+    </sensor>
+  </gazebo>
+
+  <!-- Gazebo: 중력 비활성화 → 물리 간섭 최소화 -->
+  <gazebo reference="base_link">
+    <gravity>false</gravity>
+    <material>Gazebo/White</material>
+  </gazebo>
+  <gazebo reference="front_left_wheel_link"><gravity>false</gravity></gazebo>
+  <gazebo reference="front_right_wheel_link"><gravity>false</gravity></gazebo>
+  <gazebo reference="rear_left_wheel_link"><gravity>false</gravity></gazebo>
+  <gazebo reference="rear_right_wheel_link"><gravity>false</gravity></gazebo>
+
+  <!-- planar_move: cmd_vel → 모델 이동 + odom 발행 (ackermann 플러그인 대체) -->
+  <gazebo>
+    <plugin name="planar_move" filename="libgazebo_ros_planar_move.so">
+      <ros>
+        <remapping>cmd_vel:=cmd_vel</remapping>
+        <remapping>odom:=odom</remapping>
+      </ros>
+      <command_topic>cmd_vel</command_topic>
+      <odometry_topic>odom</odometry_topic>
+      <odometry_frame>odom</odometry_frame>
+      <robot_base_frame>base_link</robot_base_frame>
+      <odometry_rate>20.0</odometry_rate>
+      <publish_odom>true</publish_odom>
+      <publish_odom_tf>true</publish_odom_tf>
+    </plugin>
+  </gazebo>
+
+</robot>
