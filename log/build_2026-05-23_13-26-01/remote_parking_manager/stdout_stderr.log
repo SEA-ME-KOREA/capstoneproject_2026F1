@@ -1,0 +1,15 @@
+running develop
+running egg_info
+writing remote_parking_manager.egg-info/PKG-INFO
+writing dependency_links to remote_parking_manager.egg-info/dependency_links.txt
+writing entry points to remote_parking_manager.egg-info/entry_points.txt
+writing requirements to remote_parking_manager.egg-info/requires.txt
+writing top-level names to remote_parking_manager.egg-info/top_level.txt
+reading manifest file 'remote_parking_manager.egg-info/SOURCES.txt'
+writing manifest file 'remote_parking_manager.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/jihyun/remote_parking_ws_1/install/remote_parking_manager/lib/python3.10/site-packages/remote-parking-manager.egg-link (link to .)
+Installing mission_manager script to /home/jihyun/remote_parking_ws_1/install/remote_parking_manager/lib/remote_parking_manager
+
+Installed /home/jihyun/remote_parking_ws_1/build/remote_parking_manager
+running symlink_data

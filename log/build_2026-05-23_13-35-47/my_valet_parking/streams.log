@@ -1,0 +1,29 @@
+[0.518s] Invoking command in '/home/jihyun/remote_parking_ws_1/build/my_valet_parking': PYTHONPATH=/home/jihyun/remote_parking_ws_1/build/my_valet_parking/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jihyun/remote_parking_ws_1/install/my_valet_parking/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jihyun/remote_parking_ws_1/build/my_valet_parking/build --no-deps symlink_data
+[0.674s] running develop
+[0.760s] running egg_info
+[0.760s] writing my_valet_parking.egg-info/PKG-INFO
+[0.760s] writing dependency_links to my_valet_parking.egg-info/dependency_links.txt
+[0.760s] writing entry points to my_valet_parking.egg-info/entry_points.txt
+[0.760s] writing requirements to my_valet_parking.egg-info/requires.txt
+[0.760s] writing top-level names to my_valet_parking.egg-info/top_level.txt
+[0.761s] reading manifest file 'my_valet_parking.egg-info/SOURCES.txt'
+[0.762s] writing manifest file 'my_valet_parking.egg-info/SOURCES.txt'
+[0.763s] running build_ext
+[0.763s] Creating /home/jihyun/remote_parking_ws_1/install/my_valet_parking/lib/python3.10/site-packages/my-valet-parking.egg-link (link to .)
+[0.763s] Installing car_exit_controller script to /home/jihyun/remote_parking_ws_1/install/my_valet_parking/lib/my_valet_parking
+[0.763s] Installing dynamic_tracker_node script to /home/jihyun/remote_parking_ws_1/install/my_valet_parking/lib/my_valet_parking
+[0.763s] Installing limo2_arrow_teleop script to /home/jihyun/remote_parking_ws_1/install/my_valet_parking/lib/my_valet_parking
+[0.763s] Installing limo2_exit_handler script to /home/jihyun/remote_parking_ws_1/install/my_valet_parking/lib/my_valet_parking
+[0.763s] Installing limo_evasion_controller script to /home/jihyun/remote_parking_ws_1/install/my_valet_parking/lib/my_valet_parking
+[0.764s] Installing limo_f1tenth_pure_pursuit script to /home/jihyun/remote_parking_ws_1/install/my_valet_parking/lib/my_valet_parking
+[0.764s] Installing limo_lane_mission script to /home/jihyun/remote_parking_ws_1/install/my_valet_parking/lib/my_valet_parking
+[0.764s] Installing limo_valet_parking_node script to /home/jihyun/remote_parking_ws_1/install/my_valet_parking/lib/my_valet_parking
+[0.764s] Installing limo_lane_mission.py script to /home/jihyun/remote_parking_ws_1/install/my_valet_parking/lib/my_valet_parking
+[0.764s] Installing parking_detector.py script to /home/jihyun/remote_parking_ws_1/install/my_valet_parking/lib/my_valet_parking
+[0.765s] Installing limo_parking_planner.py script to /home/jihyun/remote_parking_ws_1/install/my_valet_parking/lib/my_valet_parking
+[0.765s] Installing simple_straight_mission.py script to /home/jihyun/remote_parking_ws_1/install/my_valet_parking/lib/my_valet_parking
+[0.765s] Installing run_parking_algorithm.sh script to /home/jihyun/remote_parking_ws_1/install/my_valet_parking/lib/my_valet_parking
+[0.765s] 
+[0.766s] Installed /home/jihyun/remote_parking_ws_1/build/my_valet_parking
+[0.766s] running symlink_data
+[0.785s] Invoked command in '/home/jihyun/remote_parking_ws_1/build/my_valet_parking' returned '0': PYTHONPATH=/home/jihyun/remote_parking_ws_1/build/my_valet_parking/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jihyun/remote_parking_ws_1/install/my_valet_parking/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jihyun/remote_parking_ws_1/build/my_valet_parking/build --no-deps symlink_data

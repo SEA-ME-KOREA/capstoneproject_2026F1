@@ -185,7 +185,7 @@ def generate_launch_description():
                     'limo1_init_y':   0.35,
                     'limo1_init_yaw': 0.0,
                     # LIMO 1 후진 목표 (차로 서쪽으로 직선 후진)
-                    'limo1_evade_x':  -0.5,
+                    'limo1_evade_x':  -0.9,
                     'limo1_evade_y':   0.35,
                     # LIMO 2 (기본) 출차 목표 (주차장 출구)
                     'limo2_exit_x':   3.0,

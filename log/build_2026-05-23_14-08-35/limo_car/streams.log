@@ -1,0 +1,36 @@
+[0.461s] Invoking command in '/home/jihyun/remote_parking_ws_1/build/limo_car': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jihyun/ros2_ws/install/py_pubsub:/opt/ros/humble /usr/bin/cmake --build /home/jihyun/remote_parking_ws_1/build/limo_car -- -j22 -l22
+[0.504s] Invoked command in '/home/jihyun/remote_parking_ws_1/build/limo_car' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jihyun/ros2_ws/install/py_pubsub:/opt/ros/humble /usr/bin/cmake --build /home/jihyun/remote_parking_ws_1/build/limo_car -- -j22 -l22
+[0.514s] Invoking command in '/home/jihyun/remote_parking_ws_1/build/limo_car': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jihyun/ros2_ws/install/py_pubsub:/opt/ros/humble /usr/bin/cmake --install /home/jihyun/remote_parking_ws_1/build/limo_car
+[0.524s] -- Install configuration: ""
+[0.524s] -- Execute custom install script
+[0.525s] -- Up-to-date symlink: /home/jihyun/remote_parking_ws_1/install/limo_car/share/limo_car/launch/ackermann.launch.py
+[0.525s] -- Up-to-date symlink: /home/jihyun/remote_parking_ws_1/install/limo_car/share/limo_car/launch/ackermann_gazebo.launch.py
+[0.525s] -- Up-to-date symlink: /home/jihyun/remote_parking_ws_1/install/limo_car/share/limo_car/launch/display_ackermann.launch.py
+[0.525s] -- Up-to-date symlink: /home/jihyun/remote_parking_ws_1/install/limo_car/share/limo_car/gazebo/ackermann.xacro
+[0.525s] -- Up-to-date symlink: /home/jihyun/remote_parking_ws_1/install/limo_car/share/limo_car/gazebo/ackermann_with_sensor.xacro
+[0.526s] -- Up-to-date symlink: /home/jihyun/remote_parking_ws_1/install/limo_car/share/limo_car/gazebo/sensor.xacro
+[0.526s] -- Up-to-date symlink: /home/jihyun/remote_parking_ws_1/install/limo_car/share/limo_car/meshes/limo_base.dae
+[0.526s] -- Up-to-date symlink: /home/jihyun/remote_parking_ws_1/install/limo_car/share/limo_car/meshes/limo_base.stl
+[0.526s] -- Up-to-date symlink: /home/jihyun/remote_parking_ws_1/install/limo_car/share/limo_car/meshes/limo_wheel.dae
+[0.526s] -- Up-to-date symlink: /home/jihyun/remote_parking_ws_1/install/limo_car/share/limo_car/meshes/limo_wheel.stl
+[0.526s] -- Up-to-date symlink: /home/jihyun/remote_parking_ws_1/install/limo_car/share/limo_car/rviz/gazebo.rviz
+[0.526s] -- Up-to-date symlink: /home/jihyun/remote_parking_ws_1/install/limo_car/share/limo_car/rviz/urdf.rviz
+[0.526s] -- Up-to-date symlink: /home/jihyun/remote_parking_ws_1/install/limo_car/share/limo_car/urdf/limo_ackerman_base.xacro
+[0.526s] -- Up-to-date symlink: /home/jihyun/remote_parking_ws_1/install/limo_car/share/limo_car/urdf/limo_anteil.xacro
+[0.526s] -- Up-to-date symlink: /home/jihyun/remote_parking_ws_1/install/limo_car/share/limo_car/urdf/limo_steering_hinge.xacro
+[0.527s] -- Up-to-date symlink: /home/jihyun/remote_parking_ws_1/install/limo_car/share/ament_index/resource_index/package_run_dependencies/limo_car
+[0.527s] -- Up-to-date symlink: /home/jihyun/remote_parking_ws_1/install/limo_car/share/ament_index/resource_index/parent_prefix_path/limo_car
+[0.527s] -- Up-to-date symlink: /home/jihyun/remote_parking_ws_1/install/limo_car/share/limo_car/environment/ament_prefix_path.sh
+[0.527s] -- Up-to-date symlink: /home/jihyun/remote_parking_ws_1/install/limo_car/share/limo_car/environment/ament_prefix_path.dsv
+[0.527s] -- Up-to-date symlink: /home/jihyun/remote_parking_ws_1/install/limo_car/share/limo_car/environment/path.sh
+[0.527s] -- Up-to-date symlink: /home/jihyun/remote_parking_ws_1/install/limo_car/share/limo_car/environment/path.dsv
+[0.527s] -- Up-to-date symlink: /home/jihyun/remote_parking_ws_1/install/limo_car/share/limo_car/local_setup.bash
+[0.528s] -- Up-to-date symlink: /home/jihyun/remote_parking_ws_1/install/limo_car/share/limo_car/local_setup.sh
+[0.528s] -- Up-to-date symlink: /home/jihyun/remote_parking_ws_1/install/limo_car/share/limo_car/local_setup.zsh
+[0.528s] -- Up-to-date symlink: /home/jihyun/remote_parking_ws_1/install/limo_car/share/limo_car/local_setup.dsv
+[0.528s] -- Symlinking: /home/jihyun/remote_parking_ws_1/install/limo_car/share/limo_car/package.dsv
+[0.541s] -- Up-to-date symlink: /home/jihyun/remote_parking_ws_1/install/limo_car/share/ament_index/resource_index/packages/limo_car
+[0.541s] -- Up-to-date symlink: /home/jihyun/remote_parking_ws_1/install/limo_car/share/limo_car/cmake/limo_carConfig.cmake
+[0.541s] -- Up-to-date symlink: /home/jihyun/remote_parking_ws_1/install/limo_car/share/limo_car/cmake/limo_carConfig-version.cmake
+[0.541s] -- Up-to-date symlink: /home/jihyun/remote_parking_ws_1/install/limo_car/share/limo_car/package.xml
+[0.544s] Invoked command in '/home/jihyun/remote_parking_ws_1/build/limo_car' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jihyun/ros2_ws/install/py_pubsub:/opt/ros/humble /usr/bin/cmake --install /home/jihyun/remote_parking_ws_1/build/limo_car

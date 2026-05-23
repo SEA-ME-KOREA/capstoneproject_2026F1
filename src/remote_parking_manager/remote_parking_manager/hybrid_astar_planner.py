@@ -225,16 +225,16 @@ class OccupancyGrid:
 
 def build_parking_grid(empty_slot_x=0.225):
     """Build occupancy grid for the remote parking lot."""
-    grid = OccupancyGrid(x_min=-1.1, x_max=1.2, y_min=-0.6, y_max=1.7,
+    grid = OccupancyGrid(x_min=-1.5, x_max=1.2, y_min=-0.6, y_max=1.7,
                          resolution=0.02)
     cl, cw = 0.40, 0.26  # car + margin
 
-    for cx in [-0.675, -0.225, 0.225, 0.675]:  # A1, A2, A3, A4
+    for cx in [-1.125, -0.675, -0.225, 0.225, 0.675]:  # A0, A1, A2, A3, A4
         if abs(cx - empty_slot_x) > 0.05:
             grid.set_obstacle_rect(cx, 0.985, cl, cw, -math.pi/2)
 
     grid.set_obstacle_rect(0.05, 1.585, 2.2, 0.10)  # north wall
-    grid.set_obstacle_rect(-0.95, 0.5, 0.10, 2.4)   # west wall
+    grid.set_obstacle_rect(-1.90, 0.0, 0.10, 3.17)   # west wall (actual position)
 
     return grid
 

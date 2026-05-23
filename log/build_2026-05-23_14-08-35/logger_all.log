@@ -1,0 +1,324 @@
+[0.131s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.131s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=22, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x786d10b60ee0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x786d10cda4a0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x786d10cda4a0>>, mixin_verb=('build',))
+[0.280s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.281s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.281s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.281s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.281s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.281s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.281s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/jihyun/remote_parking_ws_1'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'ignore'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'ignore_ament_install'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['colcon_pkg']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'colcon_pkg'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['colcon_meta']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'colcon_meta'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['ros']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'ros'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['cmake', 'python']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'cmake'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'python'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['python_setup_py']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'python_setup_py'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_car) by extensions ['ignore', 'ignore_ament_install']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_car) by extension 'ignore'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_car) by extension 'ignore_ament_install'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_car) by extensions ['colcon_pkg']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_car) by extension 'colcon_pkg'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_car) by extensions ['colcon_meta']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_car) by extension 'colcon_meta'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_car) by extensions ['ros']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_car) by extension 'ros'
+[0.324s] DEBUG:colcon.colcon_core.package_identification:Package 'src/limo_car' with type 'ros.ament_cmake' and name 'limo_car'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_valet_parking) by extensions ['ignore', 'ignore_ament_install']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_valet_parking) by extension 'ignore'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_valet_parking) by extension 'ignore_ament_install'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_valet_parking) by extensions ['colcon_pkg']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_valet_parking) by extension 'colcon_pkg'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_valet_parking) by extensions ['colcon_meta']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_valet_parking) by extension 'colcon_meta'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_valet_parking) by extensions ['ros']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_valet_parking) by extension 'ros'
+[0.325s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_valet_parking' with type 'ros.ament_python' and name 'my_valet_parking'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/remote_parking_manager) by extensions ['ignore', 'ignore_ament_install']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/remote_parking_manager) by extension 'ignore'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/remote_parking_manager) by extension 'ignore_ament_install'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/remote_parking_manager) by extensions ['colcon_pkg']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/remote_parking_manager) by extension 'colcon_pkg'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/remote_parking_manager) by extensions ['colcon_meta']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/remote_parking_manager) by extension 'colcon_meta'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/remote_parking_manager) by extensions ['ros']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/remote_parking_manager) by extension 'ros'
+[0.326s] DEBUG:colcon.colcon_core.package_identification:Package 'src/remote_parking_manager' with type 'ros.ament_python' and name 'remote_parking_manager'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/remote_parking_world) by extensions ['ignore', 'ignore_ament_install']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/remote_parking_world) by extension 'ignore'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/remote_parking_world) by extension 'ignore_ament_install'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/remote_parking_world) by extensions ['colcon_pkg']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/remote_parking_world) by extension 'colcon_pkg'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/remote_parking_world) by extensions ['colcon_meta']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/remote_parking_world) by extension 'colcon_meta'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/remote_parking_world) by extensions ['ros']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/remote_parking_world) by extension 'ros'
+[0.327s] DEBUG:colcon.colcon_core.package_identification:Package 'src/remote_parking_world' with type 'ros.ament_cmake' and name 'remote_parking_world'
+[0.327s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.327s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.327s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.327s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.327s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.347s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.347s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.349s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/jihyun/pico_ws/install
+[0.349s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 8 installed packages in /home/jihyun/ros2_ws/install
+[0.350s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 358 installed packages in /opt/ros/humble
+[0.352s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.386s] Level 5:colcon.colcon_core.verb:set package 'limo_car' build argument 'cmake_args' from command line to 'None'
+[0.386s] Level 5:colcon.colcon_core.verb:set package 'limo_car' build argument 'cmake_target' from command line to 'None'
+[0.386s] Level 5:colcon.colcon_core.verb:set package 'limo_car' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.386s] Level 5:colcon.colcon_core.verb:set package 'limo_car' build argument 'cmake_clean_cache' from command line to 'False'
+[0.386s] Level 5:colcon.colcon_core.verb:set package 'limo_car' build argument 'cmake_clean_first' from command line to 'False'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'limo_car' build argument 'cmake_force_configure' from command line to 'False'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'limo_car' build argument 'ament_cmake_args' from command line to 'None'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'limo_car' build argument 'catkin_cmake_args' from command line to 'None'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'limo_car' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.387s] DEBUG:colcon.colcon_core.verb:Building package 'limo_car' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jihyun/remote_parking_ws_1/build/limo_car', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jihyun/remote_parking_ws_1/install/limo_car', 'merge_install': False, 'path': '/home/jihyun/remote_parking_ws_1/src/limo_car', 'symlink_install': True, 'test_result_base': None}
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'my_valet_parking' build argument 'cmake_args' from command line to 'None'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'my_valet_parking' build argument 'cmake_target' from command line to 'None'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'my_valet_parking' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'my_valet_parking' build argument 'cmake_clean_cache' from command line to 'False'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'my_valet_parking' build argument 'cmake_clean_first' from command line to 'False'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'my_valet_parking' build argument 'cmake_force_configure' from command line to 'False'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'my_valet_parking' build argument 'ament_cmake_args' from command line to 'None'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'my_valet_parking' build argument 'catkin_cmake_args' from command line to 'None'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'my_valet_parking' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.387s] DEBUG:colcon.colcon_core.verb:Building package 'my_valet_parking' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jihyun/remote_parking_ws_1/build/my_valet_parking', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jihyun/remote_parking_ws_1/install/my_valet_parking', 'merge_install': False, 'path': '/home/jihyun/remote_parking_ws_1/src/my_valet_parking', 'symlink_install': True, 'test_result_base': None}
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'remote_parking_manager' build argument 'cmake_args' from command line to 'None'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'remote_parking_manager' build argument 'cmake_target' from command line to 'None'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'remote_parking_manager' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'remote_parking_manager' build argument 'cmake_clean_cache' from command line to 'False'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'remote_parking_manager' build argument 'cmake_clean_first' from command line to 'False'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'remote_parking_manager' build argument 'cmake_force_configure' from command line to 'False'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'remote_parking_manager' build argument 'ament_cmake_args' from command line to 'None'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'remote_parking_manager' build argument 'catkin_cmake_args' from command line to 'None'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'remote_parking_manager' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.388s] DEBUG:colcon.colcon_core.verb:Building package 'remote_parking_manager' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jihyun/remote_parking_ws_1/build/remote_parking_manager', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jihyun/remote_parking_ws_1/install/remote_parking_manager', 'merge_install': False, 'path': '/home/jihyun/remote_parking_ws_1/src/remote_parking_manager', 'symlink_install': True, 'test_result_base': None}
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'remote_parking_world' build argument 'cmake_args' from command line to 'None'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'remote_parking_world' build argument 'cmake_target' from command line to 'None'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'remote_parking_world' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'remote_parking_world' build argument 'cmake_clean_cache' from command line to 'False'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'remote_parking_world' build argument 'cmake_clean_first' from command line to 'False'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'remote_parking_world' build argument 'cmake_force_configure' from command line to 'False'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'remote_parking_world' build argument 'ament_cmake_args' from command line to 'None'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'remote_parking_world' build argument 'catkin_cmake_args' from command line to 'None'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'remote_parking_world' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.388s] DEBUG:colcon.colcon_core.verb:Building package 'remote_parking_world' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jihyun/remote_parking_ws_1/build/remote_parking_world', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jihyun/remote_parking_ws_1/install/remote_parking_world', 'merge_install': False, 'path': '/home/jihyun/remote_parking_ws_1/src/remote_parking_world', 'symlink_install': True, 'test_result_base': None}
+[0.388s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.389s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.389s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/jihyun/remote_parking_ws_1/src/my_valet_parking' with build type 'ament_python'
+[0.390s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_valet_parking', 'ament_prefix_path')
+[0.391s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.391s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jihyun/remote_parking_ws_1/install/my_valet_parking/share/my_valet_parking/hook/ament_prefix_path.ps1'
+[0.392s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jihyun/remote_parking_ws_1/install/my_valet_parking/share/my_valet_parking/hook/ament_prefix_path.dsv'
+[0.392s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jihyun/remote_parking_ws_1/install/my_valet_parking/share/my_valet_parking/hook/ament_prefix_path.sh'
+[0.393s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.393s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.396s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/jihyun/remote_parking_ws_1/src/remote_parking_manager' with build type 'ament_python'
+[0.396s] Level 1:colcon.colcon_core.shell:create_environment_hook('remote_parking_manager', 'ament_prefix_path')
+[0.397s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jihyun/remote_parking_ws_1/install/remote_parking_manager/share/remote_parking_manager/hook/ament_prefix_path.ps1'
+[0.397s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jihyun/remote_parking_ws_1/install/remote_parking_manager/share/remote_parking_manager/hook/ament_prefix_path.dsv'
+[0.398s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jihyun/remote_parking_ws_1/install/remote_parking_manager/share/remote_parking_manager/hook/ament_prefix_path.sh'
+[0.398s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.398s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.401s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jihyun/remote_parking_ws_1/src/limo_car' with build type 'ament_cmake'
+[0.401s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jihyun/remote_parking_ws_1/src/limo_car'
+[0.401s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.401s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.630s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/jihyun/remote_parking_ws_1/src/my_valet_parking'
+[0.630s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.631s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.854s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/jihyun/remote_parking_ws_1/src/remote_parking_manager'
+[0.854s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.854s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.862s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jihyun/remote_parking_ws_1/build/limo_car': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jihyun/ros2_ws/install/py_pubsub:/opt/ros/humble /usr/bin/cmake --build /home/jihyun/remote_parking_ws_1/build/limo_car -- -j22 -l22
+[0.905s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jihyun/remote_parking_ws_1/build/limo_car' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jihyun/ros2_ws/install/py_pubsub:/opt/ros/humble /usr/bin/cmake --build /home/jihyun/remote_parking_ws_1/build/limo_car -- -j22 -l22
+[0.915s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jihyun/remote_parking_ws_1/build/limo_car': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jihyun/ros2_ws/install/py_pubsub:/opt/ros/humble /usr/bin/cmake --install /home/jihyun/remote_parking_ws_1/build/limo_car
+[0.944s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(limo_car)
+[0.945s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jihyun/remote_parking_ws_1/build/limo_car' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jihyun/ros2_ws/install/py_pubsub:/opt/ros/humble /usr/bin/cmake --install /home/jihyun/remote_parking_ws_1/build/limo_car
+[0.947s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/remote_parking_ws_1/install/limo_car' for CMake module files
+[0.948s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/remote_parking_ws_1/install/limo_car' for CMake config files
+[0.948s] Level 1:colcon.colcon_core.shell:create_environment_hook('limo_car', 'cmake_prefix_path')
+[0.949s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jihyun/remote_parking_ws_1/install/limo_car/share/limo_car/hook/cmake_prefix_path.ps1'
+[0.950s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jihyun/remote_parking_ws_1/install/limo_car/share/limo_car/hook/cmake_prefix_path.dsv'
+[0.950s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jihyun/remote_parking_ws_1/install/limo_car/share/limo_car/hook/cmake_prefix_path.sh'
+[0.951s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/remote_parking_ws_1/install/limo_car/bin'
+[0.951s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/remote_parking_ws_1/install/limo_car/lib/pkgconfig/limo_car.pc'
+[0.951s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/remote_parking_ws_1/install/limo_car/lib/python3.10/site-packages'
+[0.952s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/remote_parking_ws_1/install/limo_car/bin'
+[0.952s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/remote_parking_ws_1/install/limo_car/share/limo_car/package.ps1'
+[0.953s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jihyun/remote_parking_ws_1/install/limo_car/share/limo_car/package.dsv'
+[0.953s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/remote_parking_ws_1/install/limo_car/share/limo_car/package.sh'
+[0.954s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/remote_parking_ws_1/install/limo_car/share/limo_car/package.bash'
+[0.955s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/remote_parking_ws_1/install/limo_car/share/limo_car/package.zsh'
+[0.956s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jihyun/remote_parking_ws_1/install/limo_car/share/colcon-core/packages/limo_car)
+[0.956s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(limo_car)
+[0.956s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/remote_parking_ws_1/install/limo_car' for CMake module files
+[0.957s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/remote_parking_ws_1/install/limo_car' for CMake config files
+[0.957s] Level 1:colcon.colcon_core.shell:create_environment_hook('limo_car', 'cmake_prefix_path')
+[0.957s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jihyun/remote_parking_ws_1/install/limo_car/share/limo_car/hook/cmake_prefix_path.ps1'
+[0.958s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jihyun/remote_parking_ws_1/install/limo_car/share/limo_car/hook/cmake_prefix_path.dsv'
+[0.958s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jihyun/remote_parking_ws_1/install/limo_car/share/limo_car/hook/cmake_prefix_path.sh'
+[0.959s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/remote_parking_ws_1/install/limo_car/bin'
+[0.959s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/remote_parking_ws_1/install/limo_car/lib/pkgconfig/limo_car.pc'
+[0.959s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/remote_parking_ws_1/install/limo_car/lib/python3.10/site-packages'
+[0.959s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/remote_parking_ws_1/install/limo_car/bin'
+[0.960s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/remote_parking_ws_1/install/limo_car/share/limo_car/package.ps1'
+[0.960s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jihyun/remote_parking_ws_1/install/limo_car/share/limo_car/package.dsv'
+[0.961s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/remote_parking_ws_1/install/limo_car/share/limo_car/package.sh'
+[0.961s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/remote_parking_ws_1/install/limo_car/share/limo_car/package.bash'
+[0.961s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/remote_parking_ws_1/install/limo_car/share/limo_car/package.zsh'
+[0.962s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jihyun/remote_parking_ws_1/install/limo_car/share/colcon-core/packages/limo_car)
+[1.203s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jihyun/remote_parking_ws_1/build/remote_parking_manager': PYTHONPATH=/home/jihyun/remote_parking_ws_1/build/remote_parking_manager/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jihyun/remote_parking_ws_1/install/remote_parking_manager/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jihyun/remote_parking_ws_1/build/remote_parking_manager/build --no-deps symlink_data
+[1.263s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jihyun/remote_parking_ws_1/build/my_valet_parking': PYTHONPATH=/home/jihyun/remote_parking_ws_1/build/my_valet_parking/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jihyun/remote_parking_ws_1/install/my_valet_parking/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jihyun/remote_parking_ws_1/build/my_valet_parking/build --no-deps symlink_data
+[1.645s] Level 1:colcon.colcon_core.shell:create_environment_hook('remote_parking_manager', 'pythonpath_develop')
+[1.646s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jihyun/remote_parking_ws_1/build/remote_parking_manager/share/remote_parking_manager/hook/pythonpath_develop.ps1'
+[1.647s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jihyun/remote_parking_ws_1/build/remote_parking_manager' returned '0': PYTHONPATH=/home/jihyun/remote_parking_ws_1/build/remote_parking_manager/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jihyun/remote_parking_ws_1/install/remote_parking_manager/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jihyun/remote_parking_ws_1/build/remote_parking_manager/build --no-deps symlink_data
+[1.647s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jihyun/remote_parking_ws_1/build/remote_parking_manager/share/remote_parking_manager/hook/pythonpath_develop.dsv'
+[1.648s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jihyun/remote_parking_ws_1/build/remote_parking_manager/share/remote_parking_manager/hook/pythonpath_develop.sh'
+[1.649s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/remote_parking_ws_1/install/remote_parking_manager' for CMake module files
+[1.649s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/remote_parking_ws_1/install/remote_parking_manager' for CMake config files
+[1.650s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/remote_parking_ws_1/install/remote_parking_manager/lib'
+[1.650s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/remote_parking_ws_1/install/remote_parking_manager/bin'
+[1.650s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/remote_parking_ws_1/install/remote_parking_manager/lib/pkgconfig/remote_parking_manager.pc'
+[1.651s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/remote_parking_ws_1/install/remote_parking_manager/lib/python3.10/site-packages'
+[1.651s] Level 1:colcon.colcon_core.shell:create_environment_hook('remote_parking_manager', 'pythonpath')
+[1.651s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jihyun/remote_parking_ws_1/install/remote_parking_manager/share/remote_parking_manager/hook/pythonpath.ps1'
+[1.652s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jihyun/remote_parking_ws_1/install/remote_parking_manager/share/remote_parking_manager/hook/pythonpath.dsv'
+[1.652s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jihyun/remote_parking_ws_1/install/remote_parking_manager/share/remote_parking_manager/hook/pythonpath.sh'
+[1.653s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/remote_parking_ws_1/install/remote_parking_manager/bin'
+[1.653s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(remote_parking_manager)
+[1.653s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/remote_parking_ws_1/install/remote_parking_manager/share/remote_parking_manager/package.ps1'
+[1.654s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jihyun/remote_parking_ws_1/install/remote_parking_manager/share/remote_parking_manager/package.dsv'
+[1.655s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/remote_parking_ws_1/install/remote_parking_manager/share/remote_parking_manager/package.sh'
+[1.656s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/remote_parking_ws_1/install/remote_parking_manager/share/remote_parking_manager/package.bash'
+[1.656s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/remote_parking_ws_1/install/remote_parking_manager/share/remote_parking_manager/package.zsh'
+[1.656s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jihyun/remote_parking_ws_1/install/remote_parking_manager/share/colcon-core/packages/remote_parking_manager)
+[1.725s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_valet_parking', 'pythonpath_develop')
+[1.725s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jihyun/remote_parking_ws_1/build/my_valet_parking/share/my_valet_parking/hook/pythonpath_develop.ps1'
+[1.726s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jihyun/remote_parking_ws_1/build/my_valet_parking' returned '0': PYTHONPATH=/home/jihyun/remote_parking_ws_1/build/my_valet_parking/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jihyun/remote_parking_ws_1/install/my_valet_parking/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jihyun/remote_parking_ws_1/build/my_valet_parking/build --no-deps symlink_data
+[1.726s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jihyun/remote_parking_ws_1/build/my_valet_parking/share/my_valet_parking/hook/pythonpath_develop.dsv'
+[1.726s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jihyun/remote_parking_ws_1/build/my_valet_parking/share/my_valet_parking/hook/pythonpath_develop.sh'
+[1.727s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/remote_parking_ws_1/install/my_valet_parking' for CMake module files
+[1.727s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/remote_parking_ws_1/install/my_valet_parking' for CMake config files
+[1.728s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/remote_parking_ws_1/install/my_valet_parking/lib'
+[1.728s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/remote_parking_ws_1/install/my_valet_parking/bin'
+[1.728s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/remote_parking_ws_1/install/my_valet_parking/lib/pkgconfig/my_valet_parking.pc'
+[1.728s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/remote_parking_ws_1/install/my_valet_parking/lib/python3.10/site-packages'
+[1.728s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_valet_parking', 'pythonpath')
+[1.728s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jihyun/remote_parking_ws_1/install/my_valet_parking/share/my_valet_parking/hook/pythonpath.ps1'
+[1.729s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jihyun/remote_parking_ws_1/install/my_valet_parking/share/my_valet_parking/hook/pythonpath.dsv'
+[1.729s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jihyun/remote_parking_ws_1/install/my_valet_parking/share/my_valet_parking/hook/pythonpath.sh'
+[1.729s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/remote_parking_ws_1/install/my_valet_parking/bin'
+[1.729s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_valet_parking)
+[1.730s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/remote_parking_ws_1/install/my_valet_parking/share/my_valet_parking/package.ps1'
+[1.730s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jihyun/remote_parking_ws_1/install/my_valet_parking/share/my_valet_parking/package.dsv'
+[1.731s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/remote_parking_ws_1/install/my_valet_parking/share/my_valet_parking/package.sh'
+[1.731s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/remote_parking_ws_1/install/my_valet_parking/share/my_valet_parking/package.bash'
+[1.731s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/remote_parking_ws_1/install/my_valet_parking/share/my_valet_parking/package.zsh'
+[1.731s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jihyun/remote_parking_ws_1/install/my_valet_parking/share/colcon-core/packages/my_valet_parking)
+[1.732s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jihyun/remote_parking_ws_1/src/remote_parking_world' with build type 'ament_cmake'
+[1.732s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jihyun/remote_parking_ws_1/src/remote_parking_world'
+[1.732s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.732s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.744s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jihyun/remote_parking_ws_1/build/remote_parking_world': AMENT_PREFIX_PATH=/home/jihyun/remote_parking_ws_1/install/remote_parking_manager:/home/jihyun/remote_parking_ws_1/install/my_valet_parking:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jihyun/ros2_ws/install/py_pubsub:/opt/ros/humble PYTHONPATH=/home/jihyun/remote_parking_ws_1/build/remote_parking_manager:/home/jihyun/remote_parking_ws_1/install/remote_parking_manager/lib/python3.10/site-packages:/home/jihyun/remote_parking_ws_1/build/my_valet_parking:/home/jihyun/remote_parking_ws_1/install/my_valet_parking/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/jihyun/remote_parking_ws_1/build/remote_parking_world -- -j22 -l22
+[1.785s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jihyun/remote_parking_ws_1/build/remote_parking_world' returned '0': AMENT_PREFIX_PATH=/home/jihyun/remote_parking_ws_1/install/remote_parking_manager:/home/jihyun/remote_parking_ws_1/install/my_valet_parking:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jihyun/ros2_ws/install/py_pubsub:/opt/ros/humble PYTHONPATH=/home/jihyun/remote_parking_ws_1/build/remote_parking_manager:/home/jihyun/remote_parking_ws_1/install/remote_parking_manager/lib/python3.10/site-packages:/home/jihyun/remote_parking_ws_1/build/my_valet_parking:/home/jihyun/remote_parking_ws_1/install/my_valet_parking/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/jihyun/remote_parking_ws_1/build/remote_parking_world -- -j22 -l22
+[1.788s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jihyun/remote_parking_ws_1/build/remote_parking_world': AMENT_PREFIX_PATH=/home/jihyun/remote_parking_ws_1/install/remote_parking_manager:/home/jihyun/remote_parking_ws_1/install/my_valet_parking:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jihyun/ros2_ws/install/py_pubsub:/opt/ros/humble PYTHONPATH=/home/jihyun/remote_parking_ws_1/build/remote_parking_manager:/home/jihyun/remote_parking_ws_1/install/remote_parking_manager/lib/python3.10/site-packages:/home/jihyun/remote_parking_ws_1/build/my_valet_parking:/home/jihyun/remote_parking_ws_1/install/my_valet_parking/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/jihyun/remote_parking_ws_1/build/remote_parking_world
+[1.809s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(remote_parking_world)
+[1.810s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/remote_parking_ws_1/install/remote_parking_world' for CMake module files
+[1.811s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jihyun/remote_parking_ws_1/build/remote_parking_world' returned '0': AMENT_PREFIX_PATH=/home/jihyun/remote_parking_ws_1/install/remote_parking_manager:/home/jihyun/remote_parking_ws_1/install/my_valet_parking:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jihyun/ros2_ws/install/py_pubsub:/opt/ros/humble PYTHONPATH=/home/jihyun/remote_parking_ws_1/build/remote_parking_manager:/home/jihyun/remote_parking_ws_1/install/remote_parking_manager/lib/python3.10/site-packages:/home/jihyun/remote_parking_ws_1/build/my_valet_parking:/home/jihyun/remote_parking_ws_1/install/my_valet_parking/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/jihyun/remote_parking_ws_1/build/remote_parking_world
+[1.811s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/remote_parking_ws_1/install/remote_parking_world' for CMake config files
+[1.812s] Level 1:colcon.colcon_core.shell:create_environment_hook('remote_parking_world', 'cmake_prefix_path')
+[1.812s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jihyun/remote_parking_ws_1/install/remote_parking_world/share/remote_parking_world/hook/cmake_prefix_path.ps1'
+[1.813s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jihyun/remote_parking_ws_1/install/remote_parking_world/share/remote_parking_world/hook/cmake_prefix_path.dsv'
+[1.813s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jihyun/remote_parking_ws_1/install/remote_parking_world/share/remote_parking_world/hook/cmake_prefix_path.sh'
+[1.814s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/remote_parking_ws_1/install/remote_parking_world/bin'
+[1.814s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/remote_parking_ws_1/install/remote_parking_world/lib/pkgconfig/remote_parking_world.pc'
+[1.814s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/remote_parking_ws_1/install/remote_parking_world/lib/python3.10/site-packages'
+[1.815s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/remote_parking_ws_1/install/remote_parking_world/bin'
+[1.815s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/remote_parking_ws_1/install/remote_parking_world/share/remote_parking_world/package.ps1'
+[1.816s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jihyun/remote_parking_ws_1/install/remote_parking_world/share/remote_parking_world/package.dsv'
+[1.816s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/remote_parking_ws_1/install/remote_parking_world/share/remote_parking_world/package.sh'
+[1.817s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/remote_parking_ws_1/install/remote_parking_world/share/remote_parking_world/package.bash'
+[1.817s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/remote_parking_ws_1/install/remote_parking_world/share/remote_parking_world/package.zsh'
+[1.817s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jihyun/remote_parking_ws_1/install/remote_parking_world/share/colcon-core/packages/remote_parking_world)
+[1.818s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(remote_parking_world)
+[1.819s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/remote_parking_ws_1/install/remote_parking_world' for CMake module files
+[1.819s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/remote_parking_ws_1/install/remote_parking_world' for CMake config files
+[1.819s] Level 1:colcon.colcon_core.shell:create_environment_hook('remote_parking_world', 'cmake_prefix_path')
+[1.819s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jihyun/remote_parking_ws_1/install/remote_parking_world/share/remote_parking_world/hook/cmake_prefix_path.ps1'
+[1.820s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jihyun/remote_parking_ws_1/install/remote_parking_world/share/remote_parking_world/hook/cmake_prefix_path.dsv'
+[1.820s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jihyun/remote_parking_ws_1/install/remote_parking_world/share/remote_parking_world/hook/cmake_prefix_path.sh'
+[1.820s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/remote_parking_ws_1/install/remote_parking_world/bin'
+[1.820s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/remote_parking_ws_1/install/remote_parking_world/lib/pkgconfig/remote_parking_world.pc'
+[1.821s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/remote_parking_ws_1/install/remote_parking_world/lib/python3.10/site-packages'
+[1.821s] Level 1:colcon.colcon_core.environment:checking '/home/jihyun/remote_parking_ws_1/install/remote_parking_world/bin'
+[1.821s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/remote_parking_ws_1/install/remote_parking_world/share/remote_parking_world/package.ps1'
+[1.821s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jihyun/remote_parking_ws_1/install/remote_parking_world/share/remote_parking_world/package.dsv'
+[1.822s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/remote_parking_ws_1/install/remote_parking_world/share/remote_parking_world/package.sh'
+[1.822s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/remote_parking_ws_1/install/remote_parking_world/share/remote_parking_world/package.bash'
+[1.822s] INFO:colcon.colcon_core.shell:Creating package script '/home/jihyun/remote_parking_ws_1/install/remote_parking_world/share/remote_parking_world/package.zsh'
+[1.823s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jihyun/remote_parking_ws_1/install/remote_parking_world/share/colcon-core/packages/remote_parking_world)
+[1.823s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.823s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.824s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.824s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.830s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.830s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.830s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.842s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.843s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jihyun/remote_parking_ws_1/install/local_setup.ps1'
+[1.843s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jihyun/remote_parking_ws_1/install/_local_setup_util_ps1.py'
+[1.844s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jihyun/remote_parking_ws_1/install/setup.ps1'
+[1.846s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jihyun/remote_parking_ws_1/install/local_setup.sh'
+[1.846s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jihyun/remote_parking_ws_1/install/_local_setup_util_sh.py'
+[1.846s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jihyun/remote_parking_ws_1/install/setup.sh'
+[1.847s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jihyun/remote_parking_ws_1/install/local_setup.bash'
+[1.848s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jihyun/remote_parking_ws_1/install/setup.bash'
+[1.849s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jihyun/remote_parking_ws_1/install/local_setup.zsh'
+[1.849s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jihyun/remote_parking_ws_1/install/setup.zsh'

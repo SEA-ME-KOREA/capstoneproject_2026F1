@@ -139,7 +139,7 @@ class RemoteParkingManager(Node):
         super().__init__('remote_parking_manager')
 
         # ── 파라미터 선언 ────────────────────────────────────────
-        self.declare_parameter('limo1_evade_x',  -0.5)
+        self.declare_parameter('limo1_evade_x',  -0.9)
         self.declare_parameter('limo1_evade_y',   0.35)
         self.declare_parameter('limo2_exit_x',    3.0)
         self.declare_parameter('limo2_exit_y',    0.0)

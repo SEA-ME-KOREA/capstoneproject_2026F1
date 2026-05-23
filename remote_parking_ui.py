@@ -24,6 +24,27 @@ def ros_cmd(cmd: str) -> str:
     return f"bash -c '{SETUP_COMMANDS} && {cmd}'"
 
 
+def is_process_alive(name: str) -> bool:
+    try:
+        result = subprocess.run(
+            ['pgrep', '-f', name],
+            capture_output=True, text=True, timeout=3,
+        )
+        return result.returncode == 0
+    except Exception:
+        return False
+
+
+def kill_process_by_name(name: str):
+    try:
+        subprocess.run(
+            ['pkill', '-9', '-f', name],
+            capture_output=True, timeout=5,
+        )
+    except Exception:
+        pass
+
+
 class ProcessManager:
     def __init__(self):
         self._procs: dict[str, subprocess.Popen] = {}
@@ -73,18 +94,36 @@ class ProcessManager:
         except Exception:
             pass
 
-    def run_once(self, cmd: str, on_line=None, on_done=None):
+    def run_once(self, cmd: str, on_line=None, on_done=None, timeout=None):
         def _run():
             full = ros_cmd(cmd)
             proc = subprocess.Popen(
                 full, shell=True,
                 stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
-                text=True, bufsize=1,
+                preexec_fn=os.setsid, text=True, bufsize=1,
             )
-            if on_line:
-                for line in proc.stdout:
-                    on_line(line)
-            proc.wait()
+            deadline = time.monotonic() + timeout if timeout else None
+            try:
+                if on_line:
+                    for line in proc.stdout:
+                        on_line(line)
+                        if deadline and time.monotonic() > deadline:
+                            break
+                if deadline and time.monotonic() > deadline:
+                    try:
+                        os.killpg(os.getpgid(proc.pid), signal.SIGTERM)
+                    except ProcessLookupError:
+                        pass
+                    proc.wait(timeout=3)
+                    if on_done:
+                        on_done(-1)
+                    return
+                proc.wait()
+            except Exception:
+                try:
+                    os.killpg(os.getpgid(proc.pid), signal.SIGTERM)
+                except Exception:
+                    pass
             if on_done:
                 on_done(proc.returncode)
         t = threading.Thread(target=_run, daemon=True)
@@ -108,9 +147,13 @@ class StatusMonitor:
         self._running = False
         if self._proc and self._proc.poll() is None:
             try:
-                self._proc.terminate()
-            except Exception:
+                os.killpg(os.getpgid(self._proc.pid), signal.SIGTERM)
+            except (ProcessLookupError, OSError):
                 pass
+            try:
+                self._proc.wait(timeout=2)
+            except Exception:
+                self._proc.kill()
 
     def _loop(self):
         while self._running:
@@ -119,7 +162,7 @@ class StatusMonitor:
                 self._proc = subprocess.Popen(
                     full, shell=True,
                     stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                    text=True, bufsize=1,
+                    preexec_fn=os.setsid, text=True, bufsize=1,
                 )
                 out, _ = self._proc.communicate(timeout=3)
                 for line in out.splitlines():
@@ -130,11 +173,17 @@ class StatusMonitor:
                         break
             except subprocess.TimeoutExpired:
                 if self._proc:
-                    self._proc.kill()
-                    self._proc.wait()
+                    try:
+                        os.killpg(os.getpgid(self._proc.pid), signal.SIGTERM)
+                    except (ProcessLookupError, OSError):
+                        self._proc.kill()
+                    try:
+                        self._proc.wait(timeout=2)
+                    except Exception:
+                        pass
             except Exception:
                 pass
-            time.sleep(0.8)
+            time.sleep(1.0)
 
 
 class RemoteParkingUI:
@@ -371,7 +420,7 @@ class RemoteParkingUI:
 
     # === Actions ===
     def _start_gazebo(self):
-        if self.pm.is_running("gazebo"):
+        if self.pm.is_running("gazebo") or is_process_alive("gzserver"):
             self._log("Gazebo is already running.", "warn")
             return
         self._log("Starting Gazebo world server (gui:=true)...", "cmd")
@@ -386,9 +435,13 @@ class RemoteParkingUI:
         self._log("Stopping Gazebo...", "warn")
         self.pm.stop("gazebo")
         self.pm.stop("spawn")
+        kill_process_by_name("gzserver")
+        kill_process_by_name("gzclient")
+        self._log("Gazebo processes killed.", "warn")
 
     def _spawn_robots(self):
-        if not self.pm.is_running("gazebo"):
+        gazebo_running = self.pm.is_running("gazebo") or is_process_alive("gzserver")
+        if not gazebo_running:
             self._log("Gazebo is not running! Start Gazebo first.", "error")
             return
         if self.pm.is_running("spawn"):
@@ -400,6 +453,7 @@ class RemoteParkingUI:
             "ros2 launch remote_parking_world spawn_robots.launch.py",
             on_line=lambda l: self._log(l.rstrip()),
         )
+        self.monitor.start()
 
     def _stop_spawn(self):
         self._log("Stopping spawn/nodes...", "warn")
@@ -412,11 +466,13 @@ class RemoteParkingUI:
         def on_done(rc):
             if rc == 0:
                 self._log("Mission started successfully!", "success")
+            elif rc == -1:
+                self._log("Mission start timed out. Is mission_manager running?", "error")
             else:
                 self._log("Mission start failed.", "error")
         self.pm.run_once(
             "ros2 service call /start_remote_parking std_srvs/srv/Trigger '{}'",
-            on_line=on_line, on_done=on_done,
+            on_line=on_line, on_done=on_done, timeout=15,
         )
 
     def _select_car(self, car: str):
@@ -426,11 +482,13 @@ class RemoteParkingUI:
         def on_done(rc):
             if rc == 0:
                 self._log(f"Car {car.upper()} selected!", "success")
+            elif rc == -1:
+                self._log(f"Car {car.upper()} selection timed out. Is mission_manager running?", "error")
             else:
                 self._log(f"Car {car.upper()} selection failed (service).", "error")
         self.pm.run_once(
             f"ros2 service call /select_exit_car/{car} std_srvs/srv/Trigger '{{}}'",
-            on_line=on_line, on_done=on_done,
+            on_line=on_line, on_done=on_done, timeout=15,
         )
 
     def _reset_teleport(self):
@@ -440,6 +498,7 @@ class RemoteParkingUI:
             f"bash {script} teleport",
             on_line=lambda l: self._log(l.rstrip()),
             on_done=lambda rc: self._log("Reset complete." if rc == 0 else "Reset failed.", "success" if rc == 0 else "error"),
+            timeout=30,
         )
 
     def _reset_respawn(self):
@@ -449,12 +508,22 @@ class RemoteParkingUI:
             f"bash {script} respawn",
             on_line=lambda l: self._log(l.rstrip()),
             on_done=lambda rc: self._log("Reset complete." if rc == 0 else "Reset failed.", "success" if rc == 0 else "error"),
+            timeout=60,
         )
 
     def _stop_all_procs(self):
         self._log("STOPPING ALL PROCESSES...", "error")
+        self.monitor.stop()
         self.pm.stop_all()
-        self._log("All processes stopped.", "warn")
+        kill_process_by_name("gzserver")
+        kill_process_by_name("gzclient")
+        kill_process_by_name("robot_state_publisher")
+        kill_process_by_name("joint_state_publisher")
+        kill_process_by_name("spawn_entity")
+        kill_process_by_name("mission_manager")
+        kill_process_by_name("dynamic_tracker_node")
+        kill_process_by_name("rviz2")
+        self._log("All processes stopped (including system-wide).", "warn")
 
     # === Status Updates ===
     def _on_status_update(self, state: str):
@@ -505,8 +574,8 @@ class RemoteParkingUI:
                 circ.configure(bg=self.OVERLAY, fg=self.FG)
 
     def _update_proc_status(self):
-        gz = self.pm.is_running("gazebo")
-        sp = self.pm.is_running("spawn")
+        gz = self.pm.is_running("gazebo") or is_process_alive("gzserver")
+        sp = self.pm.is_running("spawn") or is_process_alive("mission_manager")
         self.gazebo_status.configure(
             text=f"  Gazebo: {'Running' if gz else 'Stopped'}",
             fg=self.GREEN if gz else self.RED,
@@ -518,8 +587,22 @@ class RemoteParkingUI:
         self.root.after(2000, self._update_proc_status)
 
     def _on_close(self):
-        self.monitor.stop()
-        self.pm.stop_all()
+        if messagebox.askyesno(
+            "종료 확인",
+            "UI를 종료합니다. 모든 Gazebo/ROS2 프로세스도 종료할까요?",
+        ):
+            self.monitor.stop()
+            self.pm.stop_all()
+            kill_process_by_name("gzserver")
+            kill_process_by_name("gzclient")
+            kill_process_by_name("mission_manager")
+            kill_process_by_name("dynamic_tracker_node")
+            kill_process_by_name("robot_state_publisher")
+            kill_process_by_name("joint_state_publisher")
+            kill_process_by_name("rviz2")
+        else:
+            self.monitor.stop()
+            self.pm.stop_all()
         self.root.destroy()
 
     def run(self):
